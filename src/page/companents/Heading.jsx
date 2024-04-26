@@ -1,5 +1,5 @@
 import React from "react";
-import HeadingLogo from "../../assets/images/HeadingLogo.png";
+import HeadingLogo from "../../assets/images/55f68e1fbbfb3a97de3447dea15fbe28.jpg";
 export default function Heading() {
   return (
     <div className="Heading-all">
