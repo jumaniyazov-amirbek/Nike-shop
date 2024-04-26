@@ -151,10 +151,9 @@ body {
   border-radius: 10px 10px 0 0;
   transition: all 0.5s;
   border-bottom: 3px solid #fff;
-
 }
 .Glassess-block-btn:hover {
-  border-bottom: 3px solid #000;
+  border-bottom: 2px solid #000;
   transform: translateY(-30px);
 }
 .Glassess-all {
@@ -192,19 +191,16 @@ body {
 .Product-all-product-1-block-mini {
   width: 301px;
   height: 389px;
-  top: 1708.17px;
-  left: 83.5px;
-  gap: 0px;
-  opacity: 0px;
-  border-radius: 10px;
   transition: all 0.5s;
-  border: #a1a1a1 1px solid;
   display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  border-radius: 5px;
 }
 .Product-all-product-1-block-mini:hover {
-  -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75);
+  border-bottom: 1px solid #000;
+  margin: -50px 0 0 0;
+  border-radius: 10px 10px 0 0;
 }
 .Product-all-product-1-block {
   display: flex;
@@ -221,36 +217,114 @@ body {
 }
 .Product-all-link a {
   text-decoration: none;
-  color: #000;
+  color: #a8a8a8;
   transition: 0.5s;
   border-bottom: #fff 1px solid;
   font-size: 18px;
 }
 .Product-all-link a:hover {
-  border-bottom: #40bfff 1px solid;
-  color: #40bfff;
+  border-bottom: #000 1px solid;
+  color: #000;
 }
 .Product-all-link {
   display: flex;
   gap: 20px;
 }
- 
-.Product-all-product-1-block-mini div{
-  width: 24px;
-  height: 20px;
-  color: rgb(158, 158, 158);
-}
+
 .star::before {
-    content:"";
-    display:block;
-    padding-top:100%;
-    background:currentColor;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
- 
-    width: 100%;
-    height: 100%;
+  content: "";
+  display: block;
+  padding-top: 100%;
+  background: currentColor;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+
+  width: 12px;
+  height: 12px; 
+}
+.star:hover {
+  color: rgb(255, 145, 0);
+}
+.star{
+  color: rgb(158, 158, 158);
+
+}
+.star-block {
+  display: flex;
+  gap: 10px;
+}
+.Product-all-product-1-block-mini img {
+  width: 299px;
+  height: 290px;
+}
+.Product-all-product-1-block-mini-text-all{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.Product-all-product-1-block-mini-text p{
+  font-size: 18px;
+  color: #223263;
+  font-weight: 600;
+}
+.Product-all-product-1-block-mini-price h2{
+color: #40BFFF;
+}
+.Product-all-product-1-block-mini-price span{
+color: #FB7181;
+
+font-weight: 600;
+}
+.Product-all-product-1-block-mini-price p{
+    color: #bbbfcc;
+}
+.Product-all-product-1-block-mini-price{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.heart {
+  --accent: #aa0946;
+  --background: #690734;
+  --glow: #48112a44;
+
   
- }
- .star:hover{
-     color: yellow;
- }
+}
+
+
+.icon {
+	font-size: 4rem;
+	color: var(--accent);
+	padding: 0.5rem;
+	border-radius: 9px;
+	cursor: pointer;
+	width: 5rem;
+	height: 5rem;
+	display: grid;
+	place-items: center;
+
+
+}
+.heart-block img{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  margin: -320px 0 0 -20px;
+color:rgb(255, 0, 21);
+
+}
