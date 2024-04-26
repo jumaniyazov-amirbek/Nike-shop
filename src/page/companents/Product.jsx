@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import left from '../../assets/svg/left.svg'
+import right from '../../assets/svg/right.svg'
 import ProductMini from "./ProductMini";
 export default function Product() {
   return (
@@ -16,8 +17,11 @@ export default function Product() {
           <a href="#">Sunglasses</a>
         </div>
         <div className="Product-all-product-all">
-          <ProductMini /> <br /><br />
-          <ProductMini />
+          <ProductMini /> 
+       <div className="Product-all-product-all-btn">
+        <button><img src={left} alt="" /></button>
+        <button><img src={right} alt="" /></button>
+       </div>
         </div>
       </div>
     </div>
