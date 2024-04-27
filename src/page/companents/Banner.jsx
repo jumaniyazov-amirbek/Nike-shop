@@ -11,7 +11,7 @@ export default function Banner() {
           <div className="Banner-text">
             <p>
               Super Flash Sale <br />
-              50% Off
+              50% Of.
             </p>
           </div>
         </div>
