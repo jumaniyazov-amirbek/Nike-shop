@@ -8,7 +8,7 @@ export default function Main() {
     <div className="Main">
       <Banner />
       <Glassess />
-      <Product/>
+      <Product />
     </div>
   );
 }

@@ -418,3 +418,78 @@ hr {
 .Product-all-product-1-block{
   flex-wrap: wrap;
 }
+
+
+
+/* yfre */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-bg-img{
+  position: absolute;
+  width:85%;
+  height: 700px;
+  left: 150px;
+  z-index: 0;
+}
+.my-headline {
+  font-feature-settings: "ss01","dlig";
+--column-count: 6;
+--gutter: 0px;
+--inner-width: min(calc(100vw - 240px),1200px);
+--font-family: "Inter var",-apple-system,BlinkMacSystemFont,"Roboto","Open Sans",sans-serif;
+--display-font-family: "InterDisplay var","Inter",-apple-system,BlinkMacSystemFont,"Roboto","Open Sans",sans-serif;
+--black: 15,18,22;
+--black-pure: 0,0,0;
+--white: 255,255,255;
+--blue: 96,44,245;
+--blue-bright: 106,54,255;
+--cyan: 123,168,255;
+--magenta: 248,50,151;
+--yellow: 255,939,94;
+--link-color: 111,164,248;
+--primary-vertical-section-spacing: 200px;
+-webkit-font-smoothing: antialiased;
+color: rgba(var(--white),1);
+text-align: center;
+box-sizing: border-box;
+margin: 0;
+border: 0;
+outline: 0;
+font-style: inherit;
+vertical-align: baseline;
+padding: .5em 0;
+font-family: var(--display-font-family);
+font-size: 100px;
+font-weight: 900;
+line-height: 1;
+letter-spacing: -.015em;
+background: url(https://d33wubrfki0l68.cloudfront.net/_next/static/media/f4f16a82938b3471164dab57854d8c5b36bff0ff/big-gradient-2.cec2615303f228afe4e48bc145bee6a7.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-transform: translateZ(0);
+}
+

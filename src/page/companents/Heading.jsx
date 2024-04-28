@@ -5,9 +5,11 @@ export default function Heading() {
     <div className="Heading-all">
       <div className="continer">
         <div className="Heading-block">
-          <div className="Heading-logo">
+         <a href="#">
+         <div className="Heading-logo">
             <img src={HeadingLogo} alt="" />
           </div>
+         </a>
           <div className="Heading-sorche">
             <input placeholder="Search query..." type="text" />
             <button>Search</button>
