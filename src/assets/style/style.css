@@ -493,3 +493,15 @@ background-attachment: fixed;
 -webkit-transform: translateZ(0);
 }
 
+.Output{
+
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+margin: -917px 0 0 -20px;
+
+}
+.Product-all-product-1-block{
+  display: flex;
+
+}
