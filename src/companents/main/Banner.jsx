@@ -1,4 +1,3 @@
-import React from "react";
 import BannerBgImg from "./BannerBgImg";
 export default function Banner() {
   return (

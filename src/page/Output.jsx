@@ -1,4 +1,3 @@
-import React from "react";
 import heart from "../assets/svg/heart.svg";
 import clothes1 from "../assets/kiyim-image/4268151945_w640_h640_sportivnyj-kostyum-jordan.webp";
 import clothes2 from "../assets/kiyim-image/4268151947_w640_h640_sportivnyj-kostyum-jordan.webp";

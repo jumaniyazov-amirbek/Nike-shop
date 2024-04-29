@@ -1,7 +1,7 @@
 import React from "react";
-import Banner from "./companents/Banner";
-import Glassess from "./companents/Glassess";
-import Product from "./companents/Product";
+import Banner from "./Banner";
+import Glassess from "./Glassess";
+import Product from "./Product";
 
 export default function Main() {
   return (
