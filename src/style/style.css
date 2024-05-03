@@ -4,25 +4,29 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
 html,
 body {
   width: 100%;
   height: 100%;
 }
+
 .container {
   width: 1400px;
   padding: 0 20px;
   margin: 0 auto;
 }
+
 .Header-select select {
   cursor: pointer;
   border: none;
   outline: none;
 }
- option {
-  cursor: pointer;
 
+option {
+  cursor: pointer;
 }
+
 .Header-all {
   width: 1440px;
   margin: 0 auto;
@@ -32,6 +36,7 @@ body {
   justify-content: space-between;
   border-bottom: 1px solid #d4d4d68f;
 }
+
 .header-block {
   display: flex;
   align-items: center;
@@ -45,6 +50,7 @@ body {
   justify-content: center;
   gap: 50px;
 }
+
 .Header-btn-1 button {
   background-color: #fff;
   border: none;
@@ -61,12 +67,14 @@ body {
   cursor: pointer;
   border: none;
 }
+
 .Header-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
+
 .Heading-all {
   width: 1440px;
   height: 100px;
@@ -75,21 +83,30 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
 .Heading-link a:hover {
   color: #000;
   border-bottom: #000 1px solid;
 }
+
 .Heading-link a {
   text-decoration: none;
   color: #a0a0a0;
   transition: all 0.5s;
   border-bottom: #fff 1px solid;
+  display: flex;
+  align-content: inherit;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
 }
+
 .Heading-link {
   display: flex;
   gap: 20px;
   font-weight: 600;
 }
+
 .Heading-sorche {
   width: 635px;
   height: 50px;
@@ -101,15 +118,18 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .Heading-sorche input {
   width: 100%;
   height: 40px;
   padding: 10px;
   border: #d8d8d8 1px solid;
 }
+
 .Heading-sorche button:hover {
   background-color: #000;
 }
+
 .Heading-sorche button {
   width: 127px;
   background-color: #d8d8d8;
@@ -119,16 +139,19 @@ body {
   transition: all 0.5s;
   cursor: pointer;
 }
+
 .Heading-block {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 200px;
 }
+
 .app {
   display: flex;
   flex-direction: column;
 }
+
 .Banner-text {
   width: 573.17px;
   height: 228.49px;
@@ -143,16 +166,19 @@ body {
   color: #fff;
   position: relative;
 }
+
 .Banner-bg-img img {
   position: absolute;
   height: 700px;
   left: 190px;
   width: 80%;
 }
+
 .Main {
   display: flex;
   flex-direction: column;
 }
+
 .Glassess-block-btn img {
   width: 397px;
   height: 420px;
@@ -160,6 +186,7 @@ body {
   opacity: 0px;
   border-radius: 10px 10px 0 0;
 }
+
 .Glassess-block-btn {
   width: 397px;
   height: 430px;
@@ -171,13 +198,16 @@ body {
   transition: all 0.5s;
   border-bottom: 3px solid #fff;
 }
+
 .Glassess-block-btn:hover {
   border-bottom: 2px solid #000;
   transform: translateY(-30px);
 }
+
 .Glassess-all {
   margin: 400px 0 0 0;
 }
+
 .Glassess-block {
   display: flex;
   position: relative;
@@ -186,9 +216,11 @@ body {
   justify-content: center;
   gap: 20px;
 }
+
 .Glassess-block-btn img {
   position: absolute;
 }
+
 .Glassess-block-btn-text {
   position: relative;
   display: flex;
@@ -207,26 +239,33 @@ body {
   color: #223263;
   font-family: sans-serif;
 }
+
 .Product-all-product-1-block-mini {
   width: 301px;
   height: 389px;
   transition: all 0.5s;
   display: flex;
   flex-direction: column;
+  user-select: none;
   background-color: #f5f5f5;
   border-radius: 5px;
+}
+.imgs img {
+  pointer-events: none;
 }
 .Product-all-product-1-block-mini:hover {
   border-bottom: 1px solid #000;
   margin: -50px 0 0 0;
   border-radius: 10px 10px 0 0;
 }
+
 .Product-all-product-1-block {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
+
 .Product-all {
   display: flex;
   align-items: center;
@@ -234,6 +273,7 @@ body {
   flex-direction: column;
   gap: 50px;
 }
+
 .Product-all-link a {
   text-decoration: none;
   color: #a8a8a8;
@@ -241,10 +281,12 @@ body {
   border-bottom: #fff 1px solid;
   font-size: 18px;
 }
+
 .Product-all-link a:hover {
   border-bottom: #000 1px solid;
   color: #000;
 }
+
 .Product-all-link {
   display: flex;
   gap: 20px;
@@ -271,20 +313,25 @@ body {
   width: 12px;
   height: 12px;
 }
+
 .star:hover {
   color: rgb(255, 145, 0);
 }
+
 .star {
   color: rgb(158, 158, 158);
 }
+
 .star-block {
   display: flex;
   gap: 10px;
 }
+
 .Product-all-product-1-block-mini img {
   width: 299px;
   height: 290px;
 }
+
 .Product-all-product-1-block-mini-text-all {
   display: flex;
   align-items: center;
@@ -292,33 +339,40 @@ body {
   flex-direction: column;
   gap: 30px;
 }
+
 .Product-all-product-1-block-mini-text p {
   font-size: 18px;
   color: #223263;
   font-weight: 600;
 }
+
 .Product-all-product-1-block-mini-price h2 {
   color: rgb(16, 46, 16);
 }
+
 .Product-all-product-1-block-mini-price span {
   color: #fb7181;
 
   font-weight: 600;
 }
+
 .Product-all-product-1-block-mini-price p {
   color: #bbbfcc;
 }
+
 .Product-all-product-1-block-mini-price {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
+
 .heart {
   --accent: #aa0946;
   --background: #690734;
   --glow: #48112a44;
 }
+
 .icon {
   font-size: 4rem;
   color: var(--accent);
@@ -330,6 +384,7 @@ body {
   display: grid;
   place-items: center;
 }
+
 .heart-block img {
   position: absolute;
   width: 25px;
@@ -337,6 +392,7 @@ body {
   margin: -340px 0 0 -20px;
   color: rgb(255, 0, 21);
 }
+
 .Heading-logo img {
   width: 94px;
   height: 87px;
@@ -345,6 +401,7 @@ body {
   gap: 0px;
   opacity: 0px;
 }
+
 .Footer-logo img {
   width: 104px;
   height: 97px;
@@ -353,6 +410,7 @@ body {
   gap: 0px;
   opacity: 0px;
 }
+
 .Footer-all {
   width: 1440px;
   margin: 0 auto;
@@ -361,40 +419,48 @@ body {
   display: flex;
   align-items: flex-start;
 }
+
 .Footer-block {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .Footer-block-mini {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 .Footer-block-mini a {
   text-decoration: none;
   color: #000;
   border-bottom: #fff 1px solid;
   transition: all 0.5s;
 }
+
 .Footer-block-mini a:hover {
   border-bottom: #000 1px solid;
 }
+
 .Footer-block-mini h1 {
   font-size: 27px;
 }
+
 .Footer-logo-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 hr {
   border: #d1d1d1 1px solid;
   width: 100%;
   margin: 90px 0 0 0;
   left: 5%;
 }
+
 .Footer-text {
   width: 100%;
   display: flex;
@@ -402,15 +468,18 @@ hr {
   justify-content: space-between;
   padding: 20px 0;
 }
+
 .Footer-img {
   display: flex;
   gap: 20px;
 }
+
 .Product-all-product-1-block-all {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
+
 .Product-all-product-all-btn {
   display: flex;
   align-content: inherit;
@@ -418,6 +487,7 @@ hr {
   justify-content: space-between;
   padding: 30px 0;
 }
+
 .Product-all-product-all-btn button {
   background-color: inherit;
   width: 60px;
@@ -426,6 +496,7 @@ hr {
   transition: all 0.5s;
   border-radius: 5px;
 }
+
 .Product-all-product-all-btn button:hover {
   cursor: pointer;
   background-color: #f5f5f5;
@@ -466,6 +537,7 @@ hr {
   left: 150px;
   z-index: 0;
 }
+
 .my-headline {
   font-feature-settings: "ss01", "dlig";
   --column-count: 6;
@@ -510,11 +582,202 @@ hr {
 }
 
 .Output {
-  background-color: #fff;
-  position: absolute;
-  z-index: 2;
-  margin: -917px 0 0 -20px;
+  padding: 6 0px 0;
 }
+
 .Product-all-product-1-block {
   display: flex;
+}
+
+.Heading-link-img {
+  width: 40px;
+  height: 20px;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+  gap: 20px;
+}
+.login h1 {
+  text-align: center;
+}
+.login-input {
+  width: 324px;
+  height: 40px;
+  top: 5px;
+  padding: 12px 17px 12px 17px;
+  gap: 0px;
+  border-radius: 3px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid #e5e5e5;
+}
+.login-bottom-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.login-bottom-left span {
+  color: #bcbcbc;
+  font-size: 12px;
+}
+.login-bottom-right a {
+  color: #bcbcbc;
+  font-size: 12px;
+  text-decoration: none;
+}
+.login-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.login button:hover {
+  background-color: #fff;
+  color: #000;
+  border: #000 solid 1px;
+  cursor: pointer;
+}
+.login button {
+  width: 320px;
+  height: 40px;
+  top: 226px;
+  padding: 10.5px 0px 11.5px 0px;
+  gap: 0px;
+  border-radius: 3px 0px 0px 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  transition: all 0.5s;
+  background-color: #000;
+  color: #fff;
+  border: #fff solid 1px;
+}
+.login p {
+  text-align: center;
+  font-size: 12px;
+  color: #8d8d8d;
+}
+.login p,
+a {
+  color: #8d8d8d;
+}
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+.Member-block-text p {
+  font-size: 26px;
+  color: #111111;
+  text-align: center;
+  font-weight: 600;
+}
+.Member-block-text h4 {
+  font-size: 24px;
+  text-align: center;
+  color: #111111;
+  font-weight: 400;
+}
+.Member-block-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px 0 200px 0;
+}
+.Member-block-text button {
+  width: 96.36px;
+  height: 39px;
+  top: 206px;
+  left: 620.81px;
+  padding: 7.5px 22.86px 7.5px 21.5px;
+  background-color: #111111;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.Member-block-text button:hover {
+  background-color: #fff;
+  color: #111111;
+  border: 1px solid #111111;
+}
+.Oredes-praduck-block {
+  display: flex;
+  border-radius: 10px;
+  width: 800px;
+  height: 100%;
+  gap: 20px;
+  border: #000 1px solid;
+  padding: 10px;
+}
+.Oredes-praduck-block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Oredes-praduck-block-text-mini {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.Oredes-block {
+  padding: 100px 0;
+  display: flex;
+  gap: 50px;
+}
+.blok {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Oredes-price {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 350px;
+  border: #000 1px solid;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+}
+.Oredes-price h1 {
+  font-size: 21px;
+}
+.Oredes-price-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.Oredes-price-block-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border: #000 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+}
+.Oredes-price-block-btn button{
+  background-color: #111111;
+  width: 305px;
+  height: 60px;
+  border-radius: 40px;
+  color: #fff;
+}
+.Oredes-praduck-block-img img{
+border-radius: 10px;
+border: #000 1px solid;
+}
+.Oredes-praduck-block-text-minii select{
+background-color: inherit;
+border: none;
 }

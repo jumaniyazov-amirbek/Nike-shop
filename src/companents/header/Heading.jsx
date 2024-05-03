@@ -14,9 +14,9 @@ export default function Heading() {
         <button>Search</button>
       </div>
       <div className="Heading-link">
-        <Link to="/">Home</Link>
-        <Link to="/orders">Orders</Link>
-        <Link to="/orders">Contact</Link>
+        <Link to="/"> Home</Link>
+        <Link to="/orders"> Orders</Link>
+        <Link to="/login">login</Link>
       </div>
     </div>
   );
