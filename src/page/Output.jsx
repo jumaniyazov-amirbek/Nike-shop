@@ -7,13 +7,14 @@ import clothes5 from "../assets/kiyim-image/4756535899_w640_h640_muzhskoj-sporti
 import clothes6 from "../assets/kiyim-image/5737313928_w640_h640_hudi-belyj-.webp";
 import clothes7 from "../assets/kiyim-image/nike.webp";
 import clothes8 from "../assets/kiyim-image/TheNorthFace.webp";
+import { Link } from "react-router-dom";
 export default function Output() {
     return (
         <div className="continer">
             <div className="Output">
                 <div className="Product-all-product-1-block-all">
                     <div className="Product-all-product-1-block">
-                        <div className="Product-all-product-1-block-mini">
+                        <Link to="/WhenPressed"> <div className="Product-all-product-1-block-mini">
                             <div className="imgs">
                                 <img src={clothes1} alt="" />
                             </div>
@@ -33,8 +34,8 @@ export default function Output() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="Product-all-product-1-block-mini">
+                        </div></Link>
+                        <Link to="/WhenPressed">  <div className="Product-all-product-1-block-mini">
                             <div className="imgs">
                                 <img src={clothes2} alt="" />
                             </div>
@@ -54,8 +55,8 @@ export default function Output() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="Product-all-product-1-block-mini">
+                        </div></Link>
+                        <Link to="/WhenPressed">   <div className="Product-all-product-1-block-mini">
                             <div className="imgs">
                                 <img src={clothes3} alt="" />
                             </div>
@@ -75,8 +76,8 @@ export default function Output() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="Product-all-product-1-block-mini">
+                        </div></Link>
+                        <Link to="/WhenPressed">   <div className="Product-all-product-1-block-mini">
                             <div className="imgs">
                                 <img src={clothes4} alt="" />
                             </div>
@@ -96,10 +97,10 @@ export default function Output() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div></Link>
                     </div>
                     <div className="Product-all-product-1-block">
-                        <div className="Product-all-product-1-block-mini">
+                        <Link to="/WhenPressed">  <div className="Product-all-product-1-block-mini">
                             <div className="imgs">
                                 <img src={clothes5} alt="" />
                             </div>
@@ -120,8 +121,8 @@ export default function Output() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="Product-all-product-1-block-mini">
+                        </div></Link>
+                        <Link to="/WhenPressed"><div className="Product-all-product-1-block-mini">
                             <div className="imgs">
                                 <img src={clothes6} alt="" />
                             </div>
@@ -141,8 +142,8 @@ export default function Output() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="Product-all-product-1-block-mini">
+                        </div></Link>
+                        <Link to="/WhenPressed"> <div className="Product-all-product-1-block-mini">
                             <div className="imgs">
                                 <img src={clothes7} alt="" />
                             </div>
@@ -162,8 +163,8 @@ export default function Output() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="Product-all-product-1-block-mini">
+                        </div></Link>
+                        <Link to="/WhenPressed"> <div className="Product-all-product-1-block-mini">
                             <div className="imgs">
                                 <img src={clothes8} alt="" />
                             </div>
@@ -182,7 +183,7 @@ export default function Output() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div></Link>
                     </div>
                 </div>
             </div>{" "}

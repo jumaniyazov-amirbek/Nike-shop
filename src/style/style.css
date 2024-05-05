@@ -109,7 +109,6 @@ option {
 
 .Heading-sorche {
   width: 635px;
-  height: 50px;
   top: 86px;
   left: 356px;
   gap: 0px;
@@ -117,6 +116,14 @@ option {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: #fff 1px solid;
+  transition: all 0.5s;
+}
+
+.Heading-sorche:hover {
+  border: #000 1px solid;
+  height: 42px;
+  background-color: #000;
 }
 
 .Heading-sorche input {
@@ -250,9 +257,11 @@ option {
   background-color: #f5f5f5;
   border-radius: 5px;
 }
+
 .imgs img {
   pointer-events: none;
 }
+
 .Product-all-product-1-block-mini:hover {
   border-bottom: 1px solid #000;
   margin: -50px 0 0 0;
@@ -297,18 +306,16 @@ option {
   display: block;
   padding-top: 100%;
   background: currentColor;
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
+  clip-path: polygon(50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%);
 
   width: 12px;
   height: 12px;
@@ -593,6 +600,7 @@ hr {
   width: 40px;
   height: 20px;
 }
+
 .login {
   display: flex;
   align-items: center;
@@ -601,9 +609,11 @@ hr {
   padding: 100px 0;
   gap: 20px;
 }
+
 .login h1 {
   text-align: center;
 }
+
 .login-input {
   width: 324px;
   height: 40px;
@@ -615,33 +625,39 @@ hr {
   opacity: 0px;
   border: 1px solid #e5e5e5;
 }
+
 .login-bottom-left {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
+
 .login-bottom-left span {
   color: #bcbcbc;
   font-size: 12px;
 }
+
 .login-bottom-right a {
   color: #bcbcbc;
   font-size: 12px;
   text-decoration: none;
 }
+
 .login-bottom {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 60px;
 }
+
 .login button:hover {
   background-color: #fff;
   color: #000;
   border: #000 solid 1px;
   cursor: pointer;
 }
+
 .login button {
   width: 320px;
   height: 40px;
@@ -656,33 +672,40 @@ hr {
   color: #fff;
   border: #fff solid 1px;
 }
+
 .login p {
   text-align: center;
   font-size: 12px;
   color: #8d8d8d;
 }
+
 .login p,
 a {
   color: #8d8d8d;
 }
+
 .none {
   display: none;
 }
+
 .block {
   display: block;
 }
+
 .Member-block-text p {
   font-size: 26px;
   color: #111111;
   text-align: center;
   font-weight: 600;
 }
+
 .Member-block-text h4 {
   font-size: 24px;
   text-align: center;
   color: #111111;
   font-weight: 400;
 }
+
 .Member-block-text {
   display: flex;
   align-items: center;
@@ -691,6 +714,7 @@ a {
   gap: 20px;
   padding: 100px 0 200px 0;
 }
+
 .Member-block-text button {
   width: 96.36px;
   height: 39px;
@@ -703,40 +727,46 @@ a {
   border-radius: 20px;
   transition: all 0.5s;
 }
+
 .Member-block-text button:hover {
   background-color: #fff;
   color: #111111;
   border: 1px solid #111111;
 }
+
 .Oredes-praduck-block {
   display: flex;
   border-radius: 10px;
   width: 800px;
   height: 100%;
   gap: 20px;
-  border: #000 1px solid;
+
   padding: 10px;
 }
+
 .Oredes-praduck-block-text {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .Oredes-praduck-block-text-mini {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 100px;
 }
+
 .Oredes-block {
   padding: 100px 0;
   display: flex;
-  gap: 50px;
+  gap: 80px;
 }
+
 .blok {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .Oredes-price {
@@ -744,40 +774,212 @@ a {
   flex-direction: column;
   gap: 20px;
   width: 350px;
-  border: #000 1px solid;
+  border: rgb(218, 218, 218) 1px solid;
   padding: 20px;
   border-radius: 10px;
   height: 100%;
 }
+
 .Oredes-price h1 {
   font-size: 21px;
 }
+
 .Oredes-price-block {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+
 .Oredes-price-block-1 {
   display: flex;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
-  border: #000 1px solid;
+  border: rgb(218, 218, 218) 1px solid;
   padding: 10px;
   border-radius: 10px;
 }
-.Oredes-price-block-btn button{
-  background-color: #111111;
+
+.Oredes-price-block-btn button {
   width: 305px;
   height: 60px;
   border-radius: 40px;
+  background-color: #fff;
+  border: #8d8d8d 1px solid;
+  color: #000;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.Oredes-price-block-btn button:hover {
+  background-color: #8d8d8d;
+  border: #fff 1px solid;
   color: #fff;
 }
-.Oredes-praduck-block-img img{
-border-radius: 10px;
-border: #000 1px solid;
+
+.Oredes-praduck-block-img img {
+  border-radius: 10px;
 }
-.Oredes-praduck-block-text-minii select{
-background-color: inherit;
-border: none;
+
+.Oredes-praduck-block-text-minii select {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.Oredes-praduck-block-text-mini-img {
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 2px;
+  border: #fff 1px solid;
+  border-radius: 5px;
+}
+
+.Oredes-praduck-block-text-mini-img:hover {
+  border: rgb(218, 218, 218) 1px solid;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+}
+
+/* gtrd */
+.Oredes-praduck-block {
+  transition: all 0.5s;
+  border: rgb(218, 218, 218) 1px solid;
+
+}
+
+.Oredes-praduck-block:hover {
+  transform: translateX(10px);
+}
+
+.About-block {
+  width: 100%;
+  height: 600px;
+  margin: 0 0 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.About-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.About-text button {
+  width: 130px;
+  height: 40px;
+  border: 1px solid #8d8d8d;
+  background-color: inherit;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.About-text button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #8d8d8d;
+}
+
+.About-block-bg {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  left: 0;
+  background-color: #f5f5f5;
+}
+
+.About-img img {
+  position: relative;
+  width: 530px;
+  height: 600px;
+  margin: 3px 0 0 0;
+}
+
+.Product-all-product-1-block a {
+  text-decoration: none;
+}
+
+.WhenPressed-block-1-img img {
+  width: 96px;
+  height: 96px;
+}
+
+.WhenPressed-block-1-img {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.WhenPressed-block-bg img {
+  width: 600px;
+  height: 672px;
+}
+
+.WhenPressed-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.WhenPressed-block-aboutozi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.WhenPressed-block-aboutozi h1 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.WhenPressed-block-aboutozi h2 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.WhenPressed-block-aboutozi img {
+  width: 73px;
+  height: 73px;
+  border-bottom: 1px solid #000;
+}
+
+.WhenPressed-block-aboutozi select {
+  height: 50px;
+  border: #8d8d8d 1px solid;
+  border-radius: 2px;
+}
+
+.WhenPressed-block-aboutozi button {
+  height: 50px;
+  border-radius: 2px;
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s;
+  font-size: 18px;
+  font-family: Basiercircle,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.WhenPressed-block-aboutozi button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+.WhenPressed-about h2{
+font-size: 18px;
+}
+.WhenPressed-about{
+  display: flex;flex-direction: column;
+  gap: 20px;
+}
+.pp{
+  display: flex;flex-direction: column;
+  border: #000 1px solid;
+  padding: 20px;
+  border-radius: 3px;
 }

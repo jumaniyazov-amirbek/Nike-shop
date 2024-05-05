@@ -25,8 +25,8 @@ export default function OredesMini() {
           <option>XXXXL</option>
         </select>
       </div>
-      <div className="Oredes-praduck-block-text-mini-img">
-        <img src={Frame} alt="" />
+      <div className="Oredes-praduck-block-text-mini-imgg">
+        <img className='Oredes-praduck-block-text-mini-img' src={Frame} alt="" />
       </div>
     </div>
   </div>
