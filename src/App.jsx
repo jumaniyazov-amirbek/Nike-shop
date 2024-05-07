@@ -6,6 +6,9 @@ import Output from "./page/Output.jsx";
 import Heading from "./companents/header/Heading.jsx";
 import Login from './page/login.jsx'
 import WhenPressed from './page/WhenPressed.jsx' 
+import PraductLeft from "./companents/main/PraductLeft.jsx";
+import PraductRight from "./companents/main/PraductRight.jsx";
+import ProductMini from "./companents/main/ProductMini.jsx";
 function App() {
   return (
     <div className="app">
@@ -17,6 +20,9 @@ function App() {
           <Route path="output" element={<Output />} />
           <Route path="login" element={<Login />} />
           <Route path="WhenPressed" element={<WhenPressed />} />
+          <Route path="PraductLeft" element={<PraductLeft />} />
+          <Route path="PraductRight" element={<PraductRight />} />
+          <Route path="ProductMini" element={<ProductMini />} />
         </Routes>
       </div>
       <Footer />

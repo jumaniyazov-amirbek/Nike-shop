@@ -37,6 +37,7 @@ export default function ProductMini() {
                             </div>
                         </div>
                     </div>
+                    
                 </Link>
                 <Link to="/WhenPressed">
                     <div className="Product-all-product-1-block-mini">
@@ -112,7 +113,7 @@ export default function ProductMini() {
                         </div>
 
                         <div className="Product-all-product-1-block-mini-price">
-                            <h2>$240,00</h2>
+                            <h2>$100,000</h2>
 
                             <p>
                                 $534,00 / <span>24% Off</span>

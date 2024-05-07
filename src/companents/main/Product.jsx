@@ -1,4 +1,3 @@
-import left from "../../assets/svg/left.svg";
 import right from "../../assets/svg/right.svg";
 import ProductMini from "./ProductMini.jsx";
 import { Link } from "react-router-dom";
@@ -18,12 +17,13 @@ export default function Product() {
         <div className="Product-all-product-all">
           <ProductMini />
           <div className="Product-all-product-all-btn">
-            <button>
-              <img src={left} alt="" />
-            </button>
-            <button>
+            <Link to="/PraductLeft">
+
+            </Link>
+            <Link to="/PraductRight"><button>
               <img src={right} alt="" />
-            </button>
+            </button></Link>
+
           </div>
         </div>
       </div>
