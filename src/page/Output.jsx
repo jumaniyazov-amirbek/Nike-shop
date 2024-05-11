@@ -9,184 +9,212 @@ import clothes7 from "../assets/kiyim-image/nike.webp";
 import clothes8 from "../assets/kiyim-image/TheNorthFace.webp";
 import { Link } from "react-router-dom";
 export default function Output() {
-    return (
-        <div className="continer">
-            <div className="Output">
-                <div className="Product-all-product-1-block-all">
-                    <div className="Product-all-product-1-block">
-                        <Link to="/WhenPressed"> <div className="Product-all-product-1-block-mini">
-                            <div className="imgs">
-                                <img src={clothes1} alt="" />
-                            </div>
-                            <div className="Product-all-product-1-block-mini-text-all">
-                                <div className="Product-all-product-1-block-mini-text">
-                                    <p>Nike air force 5</p>
-                                </div>
-
-                                <div className="Product-all-product-1-block-mini-price">
-                                    <h2>$299,00</h2>
-
-                                    <p>
-                                        $400,00 / <span>30% Off</span>
-                                    </p>
-                                    <div className="heart-block">
-                                        <img src={heart} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div></Link>
-                        <Link to="/WhenPressed">  <div className="Product-all-product-1-block-mini">
-                            <div className="imgs">
-                                <img src={clothes2} alt="" />
-                            </div>
-                            <div className="Product-all-product-1-block-mini-text-all">
-                                <div className="Product-all-product-1-block-mini-text">
-                                    <p>Nike air force 5</p>
-                                </div>
-
-                                <div className="Product-all-product-1-block-mini-price">
-                                    <h2>$399,00</h2>
-                                    <p>
-                                        $499,00 / <span>10% Off</span>
-                                    </p>
-                                    <div className="heart-block">
-                                        {" "}
-                                        <img src={heart} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div></Link>
-                        <Link to="/WhenPressed">   <div className="Product-all-product-1-block-mini">
-                            <div className="imgs">
-                                <img src={clothes3} alt="" />
-                            </div>
-                            <div className="Product-all-product-1-block-mini-text-all">
-                                <div className="Product-all-product-1-block-mini-text">
-                                    <p>Nike Dunk Low</p>
-                                </div>
-
-                                <div className="Product-all-product-1-block-mini-price">
-                                    <h2>$350,00</h2>
-                                    <p>
-                                        $520,00 / <span>28% Off</span>
-                                    </p>
-                                    <div className="heart-block">
-                                        {" "}
-                                        <img src={heart} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div></Link>
-                        <Link to="/WhenPressed">   <div className="Product-all-product-1-block-mini">
-                            <div className="imgs">
-                                <img src={clothes4} alt="" />
-                            </div>
-                            <div className="Product-all-product-1-block-mini-text-all">
-                                <div className="Product-all-product-1-block-mini-text">
-                                    <p>Nike Dunk Low</p>
-                                </div>
-
-                                <div className="Product-all-product-1-block-mini-price">
-                                    <h2>$380,00</h2>
-                                    <p>
-                                        $530,00 / <span>20% Off</span>
-                                    </p>
-                                    <div className="heart-block">
-                                        {" "}
-                                        <img src={heart} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div></Link>
-                    </div>
-                    <div className="Product-all-product-1-block">
-                        <Link to="/WhenPressed">  <div className="Product-all-product-1-block-mini">
-                            <div className="imgs">
-                                <img src={clothes5} alt="" />
-                            </div>
-                            <div className="Product-all-product-1-block-mini-text-all">
-                                <div className="Product-all-product-1-block-mini-text">
-                                    <p>Nike air force 5</p>
-                                </div>
-
-                                <div className="Product-all-product-1-block-mini-price">
-                                    <h2>$240,00</h2>
-
-                                    <p>
-                                        $534,00 / <span>24% Off</span>
-                                    </p>
-                                    <div className="heart-block">
-                                        {" "}
-                                        <img src={heart} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div></Link>
-                        <Link to="/WhenPressed"><div className="Product-all-product-1-block-mini">
-                            <div className="imgs">
-                                <img src={clothes6} alt="" />
-                            </div>
-                            <div className="Product-all-product-1-block-mini-text-all">
-                                <div className="Product-all-product-1-block-mini-text">
-                                    <p>Nike air force 5</p>
-                                </div>
-
-                                <div className="Product-all-product-1-block-mini-price">
-                                    <h2>$199,00</h2>
-                                    <p>
-                                        $550,00 / <span>45% Off</span>
-                                    </p>
-                                    <div className="heart-block">
-                                        {" "}
-                                        <img src={heart} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div></Link>
-                        <Link to="/WhenPressed"> <div className="Product-all-product-1-block-mini">
-                            <div className="imgs">
-                                <img src={clothes7} alt="" />
-                            </div>
-                            <div className="Product-all-product-1-block-mini-text-all">
-                                <div className="Product-all-product-1-block-mini-text">
-                                    <p>Nike Dunk Low</p>
-                                </div>
-
-                                <div className="Product-all-product-1-block-mini-price">
-                                    <h2>$599,00</h2>
-                                    <p>
-                                        $800,00 / <span>35% Off</span>
-                                    </p>
-                                    <div className="heart-block">
-                                        {" "}
-                                        <img src={heart} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div></Link>
-                        <Link to="/WhenPressed"> <div className="Product-all-product-1-block-mini">
-                            <div className="imgs">
-                                <img src={clothes8} alt="" />
-                            </div>
-                            <div className="Product-all-product-1-block-mini-text-all">
-                                <div className="Product-all-product-1-block-mini-text">
-                                    <p>Nike Dunk Low</p>
-                                </div>
-
-                                <div className="Product-all-product-1-block-mini-price">
-                                    <h2>$499,00</h2>
-                                    <p>
-                                        $510,00 / <span>5% Off</span>
-                                    </p>
-                                    <div className="heart-block">
-                                        <img src={heart} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div></Link>
-                    </div>
-                </div>
-            </div>{" "}
+  return (
+    <div className="continer">
+      <div className="Output">
+        <div className="Product-all-product-1-block-all">
+        <div className="Product-all-titile">
+          <h1>BEST SELLER</h1>
         </div>
-    );
+          <div className="Product-all-link">
+            <Link to="/product">Glasses</Link>
+          </div>
+          <div className="Product-all-product-1-block">
+            <Link to="/WhenPressed">
+              <div className="Product-all-product-1-block-mini">
+                <div className="imgs">
+                  <img src={clothes1} alt="" />
+                </div>
+                <div className="Product-all-product-1-block-mini-text-all">
+                  <div className="Product-all-product-1-block-mini-text">
+                    <p>Nike air force 5</p>
+                  </div>
+
+                  <div className="Product-all-product-1-block-mini-price">
+                    <h2>$299,00</h2>
+
+                    <p>
+                      $400,00 / <span>30% Off</span>
+                    </p>
+                    <div className="heart-block">
+                      <img src={heart} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="/WhenPressed">
+              {" "}
+              <div className="Product-all-product-1-block-mini">
+                <div className="imgs">
+                  <img src={clothes2} alt="" />
+                </div>
+                <div className="Product-all-product-1-block-mini-text-all">
+                  <div className="Product-all-product-1-block-mini-text">
+                    <p>Nike air force 5</p>
+                  </div>
+
+                  <div className="Product-all-product-1-block-mini-price">
+                    <h2>$399,00</h2>
+                    <p>
+                      $499,00 / <span>10% Off</span>
+                    </p>
+                    <div className="heart-block">
+                      {" "}
+                      <img src={heart} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="/WhenPressed">
+              {" "}
+              <div className="Product-all-product-1-block-mini">
+                <div className="imgs">
+                  <img src={clothes3} alt="" />
+                </div>
+                <div className="Product-all-product-1-block-mini-text-all">
+                  <div className="Product-all-product-1-block-mini-text">
+                    <p>Nike Dunk Low</p>
+                  </div>
+
+                  <div className="Product-all-product-1-block-mini-price">
+                    <h2>$350,00</h2>
+                    <p>
+                      $520,00 / <span>28% Off</span>
+                    </p>
+                    <div className="heart-block">
+                      {" "}
+                      <img src={heart} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="/WhenPressed">
+              {" "}
+              <div className="Product-all-product-1-block-mini">
+                <div className="imgs">
+                  <img src={clothes4} alt="" />
+                </div>
+                <div className="Product-all-product-1-block-mini-text-all">
+                  <div className="Product-all-product-1-block-mini-text">
+                    <p>Nike Dunk Low</p>
+                  </div>
+
+                  <div className="Product-all-product-1-block-mini-price">
+                    <h2>$380,00</h2>
+                    <p>
+                      $530,00 / <span>20% Off</span>
+                    </p>
+                    <div className="heart-block">
+                      {" "}
+                      <img src={heart} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+          <div className="Product-all-product-1-block">
+            <Link to="/WhenPressed">
+              {" "}
+              <div className="Product-all-product-1-block-mini">
+                <div className="imgs">
+                  <img src={clothes5} alt="" />
+                </div>
+                <div className="Product-all-product-1-block-mini-text-all">
+                  <div className="Product-all-product-1-block-mini-text">
+                    <p>Nike air force 5</p>
+                  </div>
+
+                  <div className="Product-all-product-1-block-mini-price">
+                    <h2>$240,00</h2>
+
+                    <p>
+                      $534,00 / <span>24% Off</span>
+                    </p>
+                    <div className="heart-block">
+                      {" "}
+                      <img src={heart} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="/WhenPressed">
+              <div className="Product-all-product-1-block-mini">
+                <div className="imgs">
+                  <img src={clothes6} alt="" />
+                </div>
+                <div className="Product-all-product-1-block-mini-text-all">
+                  <div className="Product-all-product-1-block-mini-text">
+                    <p>Nike air force 5</p>
+                  </div>
+
+                  <div className="Product-all-product-1-block-mini-price">
+                    <h2>$199,00</h2>
+                    <p>
+                      $550,00 / <span>45% Off</span>
+                    </p>
+                    <div className="heart-block">
+                      {" "}
+                      <img src={heart} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="/WhenPressed">
+              {" "}
+              <div className="Product-all-product-1-block-mini">
+                <div className="imgs">
+                  <img src={clothes7} alt="" />
+                </div>
+                <div className="Product-all-product-1-block-mini-text-all">
+                  <div className="Product-all-product-1-block-mini-text">
+                    <p>Nike Dunk Low</p>
+                  </div>
+
+                  <div className="Product-all-product-1-block-mini-price">
+                    <h2>$599,00</h2>
+                    <p>
+                      $800,00 / <span>35% Off</span>
+                    </p>
+                    <div className="heart-block">
+                      {" "}
+                      <img src={heart} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="/WhenPressed">
+              {" "}
+              <div className="Product-all-product-1-block-mini">
+                <div className="imgs">
+                  <img src={clothes8} alt="" />
+                </div>
+                <div className="Product-all-product-1-block-mini-text-all">
+                  <div className="Product-all-product-1-block-mini-text">
+                    <p>Nike Dunk Low</p>
+                  </div>
+
+                  <div className="Product-all-product-1-block-mini-price">
+                    <h2>$499,00</h2>
+                    <p>
+                      $510,00 / <span>5% Off</span>
+                    </p>
+                    <div className="heart-block">
+                      <img src={heart} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>{" "}
+    </div>
+  );
 }

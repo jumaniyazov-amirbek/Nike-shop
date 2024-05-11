@@ -1,7 +1,7 @@
 import React from 'react'
 import left from "../../assets/svg/left.svg";
-import ProductMini from "./ProductMini.jsx";
 import { Link } from "react-router-dom";
+import PraductRightMini from '../main/PraductRightMini.jsx';
 export default function PraductRight() {
     return (
         <div className="continer">
@@ -12,7 +12,7 @@ export default function PraductRight() {
 
 
                 <div className="Product-all-product-all">
-                    <ProductMini />
+                    <PraductRightMini />
                     <div className="Product-all-product-all-btn">
                         <Link to="/ProductMini">
                             <button>
