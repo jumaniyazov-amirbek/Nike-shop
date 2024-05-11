@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Product() {
   return (
     <div className="continer">
-      <div className="Product-all">
+      <div id="product" className="Product-all">
         <div className="Product-all-titile">
           <h1>BEST SELLER</h1>
         </div>

@@ -6,9 +6,9 @@ export default function Glassess() {
     <div className="Glassess-all">
       <div className="continer">
         <div className="Glassess-block">
-          <div className="Glassess-block-btn">
+          <div className="Glassess-block-btn1">
             <img src={glassess2} alt="" />
-            <div className="Glassess-block-btn-text">
+            <div className="Glassess-block-btn-text1">
            <p>nike air force 5 <br /> black </p>
             </div>
           </div>
@@ -18,9 +18,9 @@ export default function Glassess() {
            <p> Nike air force 1 </p>
             </div>
           </div>
-          <div className="Glassess-block-btn">
+          <div className="Glassess-block-btn3">
             <img src={glassess3} alt="" />
-            <div className="Glassess-block-btn-text">
+            <div className="Glassess-block-btn-text3">
            <p> Nike Court Vision Lo Nn </p>
             </div>
           </div>

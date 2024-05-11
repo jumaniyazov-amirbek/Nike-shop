@@ -10,7 +10,8 @@ export default function Banner() {
           <div className="Banner-text">
             <h1>
            
-            </h1><h2 class="my-headline">  XZ 
+            </h1>
+            <h2 class="my-headline">  XZ 
              Nike</h2>
           </div>
         </div>

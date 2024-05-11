@@ -1,6 +1,7 @@
 export default function Login() {
   return (
-    <div className="login">
+    <div className="login-all">
+      <div className="login">
       <h1>
         YOUR ACCOUNT <br />
         FOR EVERYTHING <br /> NIKE
@@ -21,6 +22,7 @@ export default function Login() {
        and Terms of Use.</p>
       <button>SIGN IN</button>
       <p>Not a Member? <a href="">Join Us.</a></p>
+    </div>
     </div>
   );
 }

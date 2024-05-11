@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import img1 from '../assets/glasses/img1.webp'
 import img2 from '../assets/glasses/img2.webp'
 import img3 from '../assets/glasses/img3.webp'
@@ -11,19 +11,52 @@ import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 
 export default function WhenPressed() {
-    return (
-        <div className='WhenPressed-all'>
-            <div className="WhenPressed-block-1-img">
-                <img src={img1} alt="" />
-                <img src={img2} alt="" />
-                <img src={img3} alt="" />
-                <img src={img4} alt="" />
-                <img src={img5} alt="" />
-                <img src={img6} alt="" />
-            </div>
+  const [activeBtn, setActiveBtn] = useState(null);
+  const [results, setResults] = useState("");
+
+  const handleClick = (value) => {
+    setActiveBtn(value);
+    setResults(value);
+  }; 
+  return (
+        <div className='WhenPressed-all'>  <div className="WhenPressed-block-1-img">
+           <div id="test">
+      <div className="btn-group" role="group">
+        <button
+          className={`btn ${activeBtn === "img1.webp" ? "btn-primary" : "btn-grey"}`}
+          type="button"
+          value="img1.webp"
+          onClick={() => handleClick(<img className='imges' src={img1} alt="" />)}
+        >
+        <img className='imges' src={img1} alt="" />
+        </button>
+        <button
+          className={`btn ${activeBtn === "img1.webp" ? "btn-primary" : "btn-grey"}`}
+          type="button"
+          value="img1.webp"
+          onClick={() => handleClick(<img className='imges' src={img2} alt="" />)}
+        >
+        <img className='imges' src={img2} alt="" />
+        </button>
+        <button
+          className={`btn ${activeBtn === "img1.webp" ? "btn-primary" : "btn-grey"}`}
+          type="button"
+          value="img1.webp"
+          onClick={() => handleClick(<img className='imges' src={img3} alt="" />)}
+        >
+        <img className='imges' src={img3} alt="" />
+        </button>
+      </div>
+      <div id="results">{results}</div>
+    </div>
+ </div>
+          
+                
+
+           
             <div className="WhenPressed-block-bg">
 
-                <Swiper style={{width: '600px', height: '672px'}}
+                <Swiper style={{width: '600px', height: '672px', zIndex:'0'}}
                     className="banner-slider slider-banner"
                     spaceBetween={0}
                     loop={true}>
@@ -54,14 +87,7 @@ export default function WhenPressed() {
                 <h2>erkek low-top sneaker</h2>
                 <h3>4699,00 TL</h3>
                 <img src={img1} alt="" />
-                <select>
-                    <option>Sootnoshenie</option>
-                    <option>39</option>
-                    <option>40</option>
-                    <option>41</option>
-                    <option>42</option>
-                    <option>43</option>
-                </select>
+
                
                 <Link to="/orders"><button className='buttton'>Oreder</button></Link>
                 <div className="WhenPressed-about">

@@ -3,12 +3,14 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
+  
 }
 
 .container {
@@ -76,12 +78,27 @@ option {
 }
 
 .Heading-all {
-  width: 1440px;
+  width: 100%;
   height: 100px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  background-color: #fff;
+  padding: 0 160px;
+  margin:  0 0 50px 0;
+  border-bottom:#8d8d8d 1px solid ;
+  -webkit-box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
+}
+.Banner-all{
+  padding-top: 100px;
+}
+.Banner-block{
+  margin: 0 20px;
 }
 
 .Heading-link a:hover {
@@ -211,6 +228,32 @@ option {
   transform: translateY(-30px);
 }
 
+.Glassess-block-btn3 img {
+  width: 397px;
+  height: 420px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+}
+
+.Glassess-block-btn3 {
+  width: 397px;
+  height: 430px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #fff;
+  margin: 0 0 200px 0;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+  border-bottom: 3px solid #fff;
+}
+
+.Glassess-block-btn3:hover {
+  border-bottom: 2px solid #000;
+  transform: translateY(-30px);
+}
+
 .Glassess-all {
   margin: 400px 0 0 0;
 }
@@ -222,6 +265,7 @@ option {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  width: 100%;
 }
 
 .Glassess-block-btn img {
@@ -237,6 +281,7 @@ option {
   padding: 40px 20px 20px 20px;
 }
 
+
 .Glassess-block-btn-text p {
   font-size: 25px;
   font-weight: 700;
@@ -246,7 +291,15 @@ option {
   color: #223263;
   font-family: sans-serif;
 }
-
+.Glassess-block-btn-text3 p {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #223263;
+  font-family: sans-serif;
+}
 .Product-all-product-1-block-mini {
   width: 301px;
   height: 389px;
@@ -272,6 +325,7 @@ option {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -290,7 +344,15 @@ option {
   border-bottom: #fff 1px solid;
   font-size: 18px;
 }
-
+.Glassess-block-btn-text3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 40px 20px 20px 20px;
+  
+}
 .Product-all-link a:hover {
   border-bottom: #000 1px solid;
   color: #000;
@@ -398,7 +460,10 @@ option {
   height: 25px;
   margin: -340px 0 0 -20px;
   color: rgb(255, 0, 21);
+  cursor: all-scroll;
+  z-index: 5;
 }
+
 
 .Heading-logo img {
   width: 94px;
@@ -419,9 +484,9 @@ option {
 }
 
 .Footer-all {
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding:  0 20px;
   flex-direction: column;
   display: flex;
   align-items: flex-start;
@@ -452,6 +517,50 @@ option {
 }
 
 .Footer-block-mini h1 {
+  font-size: 27px;
+}
+/* fg */
+.Footer-block-mini1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Footer-block-mini1 a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: #fff 1px solid;
+  transition: all 0.5s;
+}
+
+.Footer-block-mini1 a:hover {
+  border-bottom: #000 1px solid;
+}
+
+.Footer-block-mini1 h1 {
+  font-size: 27px;
+}
+
+
+/* ufgb */
+.Footer-block-mini2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Footer-block-mini2 a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: #fff 1px solid;
+  transition: all 0.5s;
+}
+
+.Footer-block-mini2 a:hover {
+  border-bottom: #000 1px solid;
+}
+
+.Footer-block-mini2 h1 {
   font-size: 27px;
 }
 
@@ -512,6 +621,7 @@ hr {
 }
 
 .Product-all-product-1-block {
+  
   flex-wrap: wrap;
 }
 
@@ -608,7 +718,7 @@ hr {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 100px 0;
+  padding:200px 0;
   gap: 20px;
 }
 
@@ -715,8 +825,12 @@ a {
   flex-direction: column;
   gap: 20px;
   padding: 100px 0 200px 0;
+  width: 100%;
 }
-
+.Member-block{
+  width: 100%;display: flex;
+  flex-direction: column;
+}
 .Member-block-text button {
   width: 96.36px;
   height: 39px;
@@ -760,7 +874,7 @@ a {
 }
 
 .Oredes-block {
-  padding: 100px 0;
+  padding: 200px 0;
   display: flex;
   gap: 80px;
 }
@@ -896,7 +1010,6 @@ a {
 
 .About-img img {
   position: relative;
-  width: 530px;
   height: 600px;
   margin: 3px 0 0 0;
 }
@@ -905,16 +1018,7 @@ a {
   text-decoration: none;
 }
 
-.WhenPressed-block-1-img img {
-  width: 96px;
-  height: 96px;
-}
 
-.WhenPressed-block-1-img {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
 .WhenPressed-block-bg img {
   width: 600px;
@@ -926,6 +1030,8 @@ a {
   align-items: center;
   justify-content: center;
   gap: 100px;
+  z-index: 1;
+  
 }
 
 .WhenPressed-block-aboutozi {
@@ -951,17 +1057,22 @@ a {
   border-bottom: 1px solid #000;
 }
 
-.WhenPressed-block-aboutozi select {
+.WhenPressed-block-aboutozi-btn {
   height: 50px;
-  border: #8d8d8d 1px solid;
+  width: 80px;
+background-color: #fff;
+border: #000 1px solid;
   border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .WhenPressed-block-aboutozi button {
   height: 50px;
   border-radius: 2px;
-  background-color: #000;
-  color: #fff;
+ 
+
   transition: all 0.5s;
   font-size: 18px;
   font-family: Basiercircle,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -987,4 +1098,124 @@ font-size: 18px;
 }
 .buttton{
   width: 100%;
+}
+.menu{
+  display: none;
+}
+.menu button{
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+.release{
+  position: absolute;
+  width: 40%;
+  height: 1000px;
+  background-color: #fff;
+  left: 60%;
+  z-index: 6;
+top: 0;
+  border-radius: 20px  0  0 20px;
+padding: 20px;
+-webkit-box-shadow: -200px 0px 0px 200px rgba(0,0,0,0.75);
+-moz-box-shadow: -200px 0px 0px 200px rgba(0,0,0,0.75);
+box-shadow: -200px 0px 0px 20000px rgba(0,0,0,0.75);
+
+}
+.link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 90px 0 180px 0 ;
+}
+.link a{
+  text-decoration: none;
+font-size: 20px;
+text-align: center;
+transition: all 0.5s;
+
+}
+.link a:hover{
+padding: 0  0  0 20px ;
+color: #000;
+}
+.Heading-logoo img{
+  width: 100%;
+  height: 240px;
+  left: 0;
+}
+/* rtgfd */
+.Glassess-block-btn1 img {
+  position: absolute;
+  width: 397px;
+  height: 420px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 10px 10px 0 0;
+}
+
+.Glassess-block-btn1 {
+  width: 397px;
+  height: 430px;
+  gap: 0px;
+  opacity: 0px;
+  background-color: #fff;
+  margin: 0 0 200px 0;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+  border-bottom: 3px solid #fff;
+}
+
+.Glassess-block-btn1:hover {
+  border-bottom: 2px solid #000;
+  transform: translateY(-30px);
+}
+
+
+
+.Glassess-block-btn-text1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 40px 20px 20px 20px;
+}
+
+
+.Glassess-block-btn-text1 p {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #223263;
+  font-family: sans-serif;
+}
+
+
+.btn-grey img{
+  width: 96px;
+  height: 96px;
+}
+.imges{
+  width: 96px;
+  height: 96px;
+  
+}
+
+
+.WhenPressed-block-1-img button {
+  width: 96px;
+  height: 96px;
+}
+.WhenPressed-all{
+padding: 130px 0 0 0 ;
+}
+.WhenPressed-block-1-img {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

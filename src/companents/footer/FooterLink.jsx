@@ -9,14 +9,14 @@ export default function FooterLink() {
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>
         </div>
-        <div className="Footer-block-mini">
+        <div className="Footer-block-mini1">
           <h1>Service</h1>
           <a href="#">About Us</a>
           <a href="#">Infomation</a>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms & Conditions</a>
         </div>
-        <div className="Footer-block-mini">
+        <div className="Footer-block-mini2">
           <h1>My Account</h1>
           <a href="#">About Us</a>
           <a href="#">Infomation</a>

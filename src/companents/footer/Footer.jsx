@@ -13,7 +13,7 @@ export default function Footer() {
         <FooterLink />
         <hr />
         <div className="Footer-text">
-          <p>© 2018 Ecommerce theme by www.bisenbaev.com</p>
+          <p>Jumaniyaz_ov_</p>
           <div className="Footer-img">
             <img src={payme1} alt="" />
             <img src={payme2} alt="" />
