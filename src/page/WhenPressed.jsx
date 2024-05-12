@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
-
+import x from "../assets/svg/x.svg";
 export default function WhenPressed() {
   const [activeBtn, setActiveBtn] = useState(null);
   const [results, setResults] = useState("");
@@ -18,6 +18,16 @@ export default function WhenPressed() {
     setActiveBtn(value);
     setResults(value);
   }; 
+  const [burger, setBurger] = useState(false);
+
+  function menu() {
+    if (burger == true) {
+      setBurger(false);
+    }
+    if (burger == false) {
+      setBurger(true);
+    }
+  }
   return (
         <div className='WhenPressed-all'>  <div className="WhenPressed-block-1-img">
            <div id="test">
@@ -46,13 +56,48 @@ export default function WhenPressed() {
         >
         <img className='imges' src={img3} alt="" />
         </button>
+        <button
+          className={`btn ${activeBtn === "img1.webp" ? "btn-primary" : "btn-grey"}`}
+          type="button"
+          value="img1.webp"
+          onClick={() => handleClick(<img className='imges' src={img4} alt="" />)}
+        >
+        <img className='imges' src={img4} alt="" />
+        </button>
+        <button
+          className={`btn ${activeBtn === "img1.webp" ? "btn-primary" : "btn-grey"}`}
+          type="button"
+          value="img1.webp"
+          onClick={() => handleClick(<img className='imges' src={img5} alt="" />)}
+        >
+        <img className='imges' src={img5} alt="" />
+        </button>
+        <button
+          className={`btn ${activeBtn === "img1.webp" ? "btn-primary" : "btn-grey"}`}
+          type="button"
+          value="img1.webp"
+          onClick={() => handleClick(<img className='imges' src={img6} alt="" />)}
+        >
+        <img className='imges' src={img6} alt="" />
+        </button>
       </div>
-      <div id="results">{results}</div>
+      <div className='results' id="results">{results}</div>
     </div>
  </div>
           
                 
-
+ <div className="rezultat-all">
+        <button className='onciliker' onClick={menu}>
+        <img src={img6} alt="" />
+        </button>
+        <div className={burger ?  "blok" : "none"}>
+          <div className="rezultat">
+          <button className='onciliker' onClick={menu}>
+        <img src={x} alt="" />
+        </button>
+          </div>
+        </div>
+      </div>
            
             <div className="WhenPressed-block-bg">
 
