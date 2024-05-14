@@ -10,7 +10,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  
+
 }
 
 .container {
@@ -88,17 +88,23 @@ option {
   z-index: 10;
   background-color: #fff;
   padding: 0 160px;
-  margin:  0 0 50px 0;
-  border-bottom:#8d8d8d 1px solid ;
-  -webkit-box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
+  margin: 0 0 50px 0;
+  border-bottom: #8d8d8d 1px solid;
+  -webkit-box-shadow: 0px 11px 39px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 11px 39px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 11px 39px 0px rgba(0, 0, 0, 0.75);
 }
-.Banner-all{
+
+.Banner-all {
   padding-top: 100px;
 }
-.Banner-block{
+
+.Banner-block {
   margin: 0 20px;
+}
+
+.banner-bg-img {
+  margin: 0 0 0 -80px;
 }
 
 .Heading-link a:hover {
@@ -148,7 +154,6 @@ box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
   height: 40px;
   padding: 10px;
   border: #d8d8d8 1px solid;
-  outline: none;
 }
 
 .Heading-sorche button:hover {
@@ -292,6 +297,7 @@ box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
   color: #223263;
   font-family: sans-serif;
 }
+
 .Glassess-block-btn-text3 p {
   font-size: 25px;
   font-weight: 700;
@@ -301,6 +307,7 @@ box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
   color: #223263;
   font-family: sans-serif;
 }
+
 .Product-all-product-1-block-mini {
   width: 301px;
   height: 389px;
@@ -345,6 +352,7 @@ box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
   border-bottom: #fff 1px solid;
   font-size: 18px;
 }
+
 .Glassess-block-btn-text3 {
   position: relative;
   display: flex;
@@ -352,8 +360,9 @@ box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
   justify-content: center;
   justify-content: space-between;
   padding: 40px 20px 20px 20px;
-  
+
 }
+
 .Product-all-link a:hover {
   border-bottom: #000 1px solid;
   color: #000;
@@ -487,7 +496,7 @@ box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
 .Footer-all {
   width: 100%;
   margin: 0 auto;
-  padding:  0 20px;
+  padding: 0 20px;
   flex-direction: column;
   display: flex;
   align-items: flex-start;
@@ -520,6 +529,7 @@ box-shadow: 0px 11px 39px 0px rgba(0,0,0,0.75);
 .Footer-block-mini h1 {
   font-size: 27px;
 }
+
 /* fg */
 .Footer-block-mini1 {
   display: flex;
@@ -622,9 +632,8 @@ hr {
 }
 
 .Product-all-product-1-block {
-  
- display: flex;
- gap: 20px;
+
+  flex-wrap: wrap;
 }
 
 /* yfre */
@@ -632,18 +641,7 @@ hr {
   width: 100%;
   height: 100%;
 }
-.btn-group button{
-  border: none;
-  cursor: pointer;
-}
-.results img{
-  position: absolute;
-left: 540px;
-top: 130px;
-z-index: 1;
-width: 600px;
-height: 672px;
-}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -731,7 +729,7 @@ height: 672px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding:200px 0;
+  padding: 200px 0;
   gap: 20px;
 }
 
@@ -840,10 +838,13 @@ a {
   padding: 100px 0 200px 0;
   width: 100%;
 }
-.Member-block{
-  width: 100%;display: flex;
+
+.Member-block {
+  width: 100%;
+  display: flex;
   flex-direction: column;
 }
+
 .Member-block-text button {
   width: 96.36px;
   height: 39px;
@@ -984,11 +985,11 @@ a {
 .About-block {
   width: 100%;
   height: 600px;
-  margin: -100px 0 100px 0;
+  margin: 0 0 100px 0;
   display: flex;
   align-items: center;
   justify-content: center;
- justify-content: space-between;
+  gap: 200px;
 }
 
 .About-text {
@@ -1001,7 +1002,7 @@ a {
 .About-text button {
   width: 130px;
   height: 40px;
-  border: 1px solid #000000;
+  border: 1px solid #8d8d8d;
   background-color: inherit;
   border-radius: 20px;
   transition: 0.5s;
@@ -1010,7 +1011,7 @@ a {
 .About-text button:hover {
   border: 1px solid #fff;
   color: #fff;
-  background-color: #000000;
+  background-color: #8d8d8d;
 }
 
 .About-block-bg {
@@ -1031,7 +1032,20 @@ a {
   text-decoration: none;
 }
 
+.WhenPressed-block-1-img img {
+  width: 96px;
+  height: 96px;
+}
 
+.WhenPressed-all {
+  padding: 130px 0 0 0;
+}
+
+.WhenPressed-block-1-img {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 .WhenPressed-block-bg img {
   width: 600px;
@@ -1044,7 +1058,7 @@ a {
   justify-content: center;
   gap: 100px;
   z-index: 1;
-  
+
 }
 
 .WhenPressed-block-aboutozi {
@@ -1070,25 +1084,20 @@ a {
   border-bottom: 1px solid #000;
 }
 
-.WhenPressed-block-aboutozi-btn {
+.WhenPressed-block-aboutozi select {
   height: 50px;
-  width: 80px;
-background-color: #fff;
-border: #000 1px solid;
+  border: #8d8d8d 1px solid;
   border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .WhenPressed-block-aboutozi button {
   height: 50px;
   border-radius: 2px;
- 
-
+  background-color: #000;
+  color: #fff;
   transition: all 0.5s;
   font-size: 18px;
-  font-family: Basiercircle,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-family: Basiercircle, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .WhenPressed-block-aboutozi button:hover {
@@ -1096,71 +1105,84 @@ border: #000 1px solid;
   background-color: #fff;
   color: #000;
 }
-.WhenPressed-about h2{
-font-size: 18px;
+
+.WhenPressed-about h2 {
+  font-size: 18px;
 }
-.WhenPressed-about{
-  display: flex;flex-direction: column;
+
+.WhenPressed-about {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
-.pp{
-  display: flex;flex-direction: column;
+
+.pp {
+  display: flex;
+  flex-direction: column;
   border: #000 1px solid;
   padding: 20px;
   border-radius: 3px;
 }
-.buttton{
+
+.buttton {
   width: 100%;
 }
-.menu{
+
+.menu {
   display: none;
 }
-.menu button{
+
+.menu button {
   border: none;
   background-color: inherit;
   cursor: pointer;
 }
-.release{
+
+.release {
   position: absolute;
   width: 40%;
   height: 1000px;
   background-color: #fff;
   left: 60%;
   z-index: 6;
-top: 0;
-  border-radius: 20px  0  0 20px;
-padding: 20px;
--webkit-box-shadow: -200px 0px 0px 200px rgba(0,0,0,0.75);
--moz-box-shadow: -200px 0px 0px 200px rgba(0,0,0,0.75);
-box-shadow: -200px 0px 0px 20000px rgba(0,0,0,0.75);
+  top: 0;
+  border-radius: 20px 0 0 20px;
+  padding: 20px;
+  -webkit-box-shadow: -200px 0px 0px 200px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -200px 0px 0px 200px rgba(0, 0, 0, 0.75);
+  box-shadow: -200px 0px 0px 20000px rgba(0, 0, 0, 0.75);
 
 }
-.link{
+
+.link {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-  padding: 90px 0 180px 0 ;
+  padding: 90px 0 180px 0;
 }
-.link a{
+
+.link a {
   text-decoration: none;
-font-size: 20px;
-text-align: center;
-transition: all 0.5s;
+  font-size: 20px;
+  text-align: center;
+  transition: all 0.5s;
 
 }
-.link a:hover{
-padding: 0  0  0 20px ;
-color: #000;
+
+.link a:hover {
+  padding: 0 0 0 20px;
+  color: #000;
 }
-.Heading-logoo img{
+
+.Heading-logoo img {
   width: 100%;
   height: 240px;
   left: 0;
 }
-/* rtgfd */
 
+/* rtgfd */
 .Glassess-block-btn1 img {
   position: absolute;
   width: 397px;
@@ -1208,34 +1230,88 @@ color: #000;
   color: #223263;
   font-family: sans-serif;
 }
-.btn-grey img{
-  width: 96px;
-  height: 96px;
+
+.ordersmenu button {
+  background-color: inherit;
+  border: none;
+  color: #9b9b9b;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.5s;
 }
-.imges{
-  width: 96px;
-  height: 96px;
-  
+
+.ordersmenu button:hover {
+  border-bottom: 1px solid #000;
+  color: #000;
 }
-.WhenPressed-block-1-img button {
-  width: 96px;
-  height: 96px;
+
+.chiqarish {
+  width: 20%;
+  position: absolute;
+  background: #fff;
+  height: 930px;
+  left: 1550px;
+  top: 0;
+  border: #000 1px solid;
+  border-radius: 20px 0 0 20px;
+
 }
-.WhenPressed-all{
-padding: 130px 0 0 0 ;
+
+.orders-menu img {
+  width: 30px;
+  height: 30px;
 }
-.WhenPressed-block-1-img {
+
+.orders-menu {
+  z-index: 7;
+  position: absolute;
+  margin: -180px 0 0 10px;
+  width: 30px;
+  height: 30px;
+
+}
+
+.imgMini {
+  width: 90px;
+  border-radius: 10px;
+  margin: 0 0 0 -20px;
+}
+
+.ordesMiniBlock {
+  width: 90%;
+
+  height: 130px;
+  border: 1PX solid #000;
+  padding: 0 20px;
+  margin: 60px 0 0 10px;
+  border-radius: 10px;
+}
+
+.ordesMiniBlock {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.orders-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 20px;
-}
-.rezultat-all{
-  position: absolute;
-  top: 100px;
-  z-index: 2;
-}
-.onciliker img{
-  width: 200px;
-  height: 200px;
 
+}
+
+.orders-text button {
+  background-color: #dedede;
+  color: #fff;
+  width: 40px;
+  height: 30px;
+  font-size: 18px;
+}
+
+.chiqarish {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
 }

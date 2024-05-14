@@ -7,6 +7,7 @@ import payme1 from "../../assets/images/Paypal.png";
 import payme2 from "../../assets/images/Western-union.png";
 import payme3 from "../../assets/images/Group 19.png";
 import karta from '../../assets/karta.png'
+import OredesMenu from "../main/OrdersMenu";
 export default function Heading() {
   const [burger, setBurger] = useState(false);
 
@@ -34,13 +35,31 @@ export default function Heading() {
         <Link to="/orders"> Orders</Link>
         <Link to="/login">login</Link>
         <a href="#product">Product</a>
+
+
+        <div className="ordersmenu">
+          <button onClick={menu}>
+            Orders
+          </button>
+          <div className={burger ? "blok" : "none"}>
+            <div className="chiqarish">
+              <OredesMenu />
+              <button className="orders-menu" onClick={menu}>
+                <img src={x} alt="" />
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+        
       </div>
 
       <div className="menu">
         <button onClick={menu}>
           <img src={menuu} alt="" />
         </button>
-        <div className={burger ?  "blok" : "none"}>
+        <div className={burger ? "blok" : "none"}>
           <div className="release">
             <button onClick={menu}>
               <img src={x} alt="" />
@@ -51,8 +70,8 @@ export default function Heading() {
               <Link to="/login">login</Link>
             </div>
             <div className="Heading-logoo">
-          <img src={karta} alt="" />
-        </div>
+              <img src={karta} alt="" />
+            </div>
             <hr />
             <div className="Footer-text">
               <p>© 2018 Ecommerce www.bisenbaev.com</p>
