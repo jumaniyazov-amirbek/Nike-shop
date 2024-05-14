@@ -103,10 +103,6 @@ option {
   margin: 0 20px;
 }
 
-.banner-bg-img {
-  margin: 0 0 0 -80px;
-}
-
 .Heading-link a:hover {
   color: #000;
   border-bottom: #000 1px solid;
@@ -868,12 +864,16 @@ a {
   display: flex;
   border-radius: 10px;
   width: 800px;
-  height: 100%;
+  height: 175px;
   gap: 20px;
 
   padding: 10px;
 }
-
+.oreders-mini-all{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .Oredes-praduck-block-text {
   display: flex;
   flex-direction: column;
@@ -1246,15 +1246,18 @@ a {
 }
 
 .chiqarish {
-  width: 20%;
+  width: 30%;
   position: absolute;
   background: #fff;
-  height: 930px;
-  left: 1550px;
+  height: 950px;
+  left: 1500px;
   top: 0;
-  border: #000 1px solid;
+  border: #c2c2c2 1px solid;
   border-radius: 20px 0 0 20px;
-
+  padding:0 30px 0 0;
+-webkit-box-shadow: -200px 0px 0px 200px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -200px 0px 0px 200px rgba(0, 0, 0, 0.75);
+    box-shadow: -200px 0px 0px 20000px rgba(0, 0, 0, 0.75);
 }
 
 .orders-menu img {
@@ -1263,9 +1266,9 @@ a {
 }
 
 .orders-menu {
-  z-index: 7;
+  z-index: 10;
   position: absolute;
-  margin: -180px 0 0 10px;
+  margin: 10px 0 0 10px;
   width: 30px;
   height: 30px;
 
@@ -1278,20 +1281,24 @@ a {
 }
 
 .ordesMiniBlock {
-  width: 90%;
-
+  width: 70%;
   height: 130px;
-  border: 1PX solid #000;
-  padding: 0 20px;
-  margin: 60px 0 0 10px;
+  border: 1PX solid #cbcbcb;
+  padding: 0px 20px;
+  margin: 0 0 0 10px;
   border-radius: 10px;
 }
-
+.ordesMiniBlock-all{
+margin: 20px 0 0 0;
+}
+.OredesMENU{
+  padding: 40px 0 0 0;
+}
 .ordesMiniBlock {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 90px;
+  gap: 120px;
 }
 
 .orders-text {
@@ -1302,7 +1309,12 @@ a {
   gap: 20px;
 
 }
+.OredesMENU{
+  display: flex;
+  flex-direction: column;
+  
 
+}
 .orders-text button {
   background-color: #dedede;
   color: #fff;
@@ -1314,4 +1326,19 @@ a {
 .chiqarish {
   opacity: 1;
   transition: all 0.5s ease-in-out;
+}
+.results img{
+    width: 600px;
+    height: 672px;
+    position: absolute;
+margin: -685px 0 0 200px;
+z-index: 2;
+}
+.btn-group button{
+  border: none;
+}
+.btn-group{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

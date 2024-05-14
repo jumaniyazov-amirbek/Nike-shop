@@ -86,7 +86,7 @@ export default function WhenPressed() {
  </div>
           
                 
- <div className="rezultat-all">
+ {/* <div className="rezultat-all">
         <button className='onciliker' onClick={menu}>
         <img src={img6} alt="" />
         </button>
@@ -98,7 +98,7 @@ export default function WhenPressed() {
           </div>
         </div>
       </div>
-           
+            */}
             <div className="WhenPressed-block-bg">
 
                 <Swiper style={{width: '600px', height: '672px', zIndex:'0'}}

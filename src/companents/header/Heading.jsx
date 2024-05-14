@@ -6,84 +6,79 @@ import x from "../../assets/svg/x.svg";
 import payme1 from "../../assets/images/Paypal.png";
 import payme2 from "../../assets/images/Western-union.png";
 import payme3 from "../../assets/images/Group 19.png";
-import karta from '../../assets/karta.png'
+import karta from "../../assets/karta.png";
 import OredesMenu from "../main/OrdersMenu";
 export default function Heading() {
-  const [burger, setBurger] = useState(false);
+    const [burger, setBurger] = useState(false);
 
-  function menu() {
-    if (burger == true) {
-      setBurger(false);
+    function menu() {
+        if (burger == true) {
+            setBurger(false);
+        }
+        if (burger == false) {
+            setBurger(true);
+        }
     }
-    if (burger == false) {
-      setBurger(true);
-    }
-  }
-  return (
-    <div className="Heading-all">
-      <Link to="/">
-        <div className="Heading-logo">
-          <img src={HeadingLogo} alt="" />
+    return (
+        <div className="Heading-all">
+            <Link to="/">
+                <div className="Heading-logo">
+                    <img src={HeadingLogo} alt="" />
+                </div>
+            </Link>
+            <div className="Heading-sorche">
+                <input placeholder="Search query..." type="text" />
+                <button>Search</button>
+            </div>
+            <div className="Heading-link">
+                <Link to="/"> Home</Link>
+                <Link to="/orders"> Orders</Link>
+
+                <a href="#product">Product</a>
+
+                <div className="ordersmenu">
+                    <button onClick={menu}>Heart</button>
+                    <div className={burger ? "blok" : "none"}>
+                        <div className="chiqarish">
+                            <button className="orders-menu" onClick={menu}>
+                                <img src={x} alt="" />
+                            </button>
+                            <OredesMenu />
+                        </div>
+                    </div>
+                </div>
+                <Link to="/login">Pirofil</Link>
+            </div>
+
+            <div className="menu">
+                <button onClick={menu}>
+                    <img src={menuu} alt="" />
+                </button>
+                <div className={burger ? "blok" : "none"}>
+                    <div className="release">
+                        <button onClick={menu}>
+                            <img src={x} alt="" />
+                        </button>
+                        <div className="link">
+                            <Link to="/"> Home</Link>
+                            <Link to="/orders"> Orders</Link>
+                            <Link to="/login">login</Link>
+                        </div>
+                        <div className="Heading-logoo">
+                            <img src={karta} alt="" />
+                        </div>
+                        <hr />
+                        <div className="Footer-text">
+                            <p>© 2018 Ecommerce www.bisenbaev.com</p>
+                            <div className="Footer-img">
+                                <img src={payme1} alt="" />
+                                <img src={payme2} alt="" />
+                                <img src={payme3} alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </Link>
-      <div className="Heading-sorche">
-        <input placeholder="Search query..." type="text" />
-        <button>Search</button>
-      </div>
-      <div className="Heading-link">
-        <Link to="/"> Home</Link>
-        <Link to="/orders"> Orders</Link>
-        <Link to="/login">login</Link>
-        <a href="#product">Product</a>
-
-
-        <div className="ordersmenu">
-          <button onClick={menu}>
-            Orders
-          </button>
-          <div className={burger ? "blok" : "none"}>
-            <div className="chiqarish">
-              <OredesMenu />
-              <button className="orders-menu" onClick={menu}>
-                <img src={x} alt="" />
-              </button>
-
-            </div>
-          </div>
-        </div>
-
-        
-      </div>
-
-      <div className="menu">
-        <button onClick={menu}>
-          <img src={menuu} alt="" />
-        </button>
-        <div className={burger ? "blok" : "none"}>
-          <div className="release">
-            <button onClick={menu}>
-              <img src={x} alt="" />
-            </button>
-            <div className="link">
-              <Link to="/"> Home</Link>
-              <Link to="/orders"> Orders</Link>
-              <Link to="/login">login</Link>
-            </div>
-            <div className="Heading-logoo">
-              <img src={karta} alt="" />
-            </div>
-            <hr />
-            <div className="Footer-text">
-              <p>© 2018 Ecommerce www.bisenbaev.com</p>
-              <div className="Footer-img">
-                <img src={payme1} alt="" />
-                <img src={payme2} alt="" />
-                <img src={payme3} alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+    );
 }
