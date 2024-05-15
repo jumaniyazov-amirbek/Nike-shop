@@ -10,7 +10,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-
 }
 
 .container {
@@ -283,7 +282,6 @@ option {
   padding: 40px 20px 20px 20px;
 }
 
-
 .Glassess-block-btn-text p {
   font-size: 25px;
   font-weight: 700;
@@ -356,7 +354,6 @@ option {
   justify-content: center;
   justify-content: space-between;
   padding: 40px 20px 20px 20px;
-
 }
 
 .Product-all-link a:hover {
@@ -374,16 +371,18 @@ option {
   display: block;
   padding-top: 100%;
   background: currentColor;
-  clip-path: polygon(50% 0%,
-      61% 35%,
-      98% 35%,
-      68% 57%,
-      79% 91%,
-      50% 70%,
-      21% 91%,
-      32% 57%,
-      2% 35%,
-      39% 35%);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
 
   width: 12px;
   height: 12px;
@@ -470,7 +469,6 @@ option {
   z-index: 5;
 }
 
-
 .Heading-logo img {
   width: 94px;
   height: 87px;
@@ -547,7 +545,6 @@ option {
 .Footer-block-mini1 h1 {
   font-size: 27px;
 }
-
 
 /* ufgb */
 .Footer-block-mini2 {
@@ -628,7 +625,6 @@ hr {
 }
 
 .Product-all-product-1-block {
-
   flex-wrap: wrap;
 }
 
@@ -803,10 +799,6 @@ a {
   color: #8d8d8d;
 }
 
-.none {
-  display: none;
-}
-
 .block {
   display: block;
 }
@@ -869,10 +861,14 @@ a {
 
   padding: 10px;
 }
-.oreders-mini-all{
+.oreders-mini-all {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 670px;
+  width: 100%;
+  border: none;
+  overflow-y: auto;
 }
 .Oredes-praduck-block-text {
   display: flex;
@@ -891,12 +887,6 @@ a {
   padding: 200px 0;
   display: flex;
   gap: 80px;
-}
-
-.blok {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 .Oredes-price {
@@ -977,11 +967,6 @@ a {
 .Oredes-praduck-block {
   transition: all 0.5s;
   border: rgb(218, 218, 218) 1px solid;
-
-}
-
-.Oredes-praduck-block:hover {
-  transform: translateX(10px);
 }
 
 .About-block {
@@ -1060,7 +1045,6 @@ a {
   justify-content: center;
   gap: 100px;
   z-index: 1;
-
 }
 
 .WhenPressed-block-aboutozi {
@@ -1099,7 +1083,9 @@ a {
   color: #fff;
   transition: all 0.5s;
   font-size: 18px;
-  font-family: Basiercircle, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Basiercircle, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .WhenPressed-block-aboutozi button:hover {
@@ -1153,7 +1139,6 @@ a {
   -webkit-box-shadow: -200px 0px 0px 200px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -200px 0px 0px 200px rgba(0, 0, 0, 0.75);
   box-shadow: -200px 0px 0px 20000px rgba(0, 0, 0, 0.75);
-
 }
 
 .link {
@@ -1170,7 +1155,6 @@ a {
   font-size: 20px;
   text-align: center;
   transition: all 0.5s;
-
 }
 
 .link a:hover {
@@ -1211,8 +1195,6 @@ a {
   transform: translateY(-30px);
 }
 
-
-
 .Glassess-block-btn-text1 {
   position: relative;
   display: flex;
@@ -1221,7 +1203,6 @@ a {
   justify-content: space-between;
   padding: 40px 20px 20px 20px;
 }
-
 
 .Glassess-block-btn-text1 p {
   font-size: 25px;
@@ -1256,10 +1237,10 @@ a {
   top: 0;
   border: #c2c2c2 1px solid;
   border-radius: 20px 0 0 20px;
-  padding:0 30px 0 0;
--webkit-box-shadow: -200px 0px 0px 200px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -200px 0px 0px 200px rgba(0, 0, 0, 0.75);
-    box-shadow: -200px 0px 0px 20000px rgba(0, 0, 0, 0.75);
+  padding: 0 30px 0 0;
+  -webkit-box-shadow: -200px 0px 0px 200px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -200px 0px 0px 200px rgba(0, 0, 0, 0.75);
+  box-shadow: -200px 0px 0px 20000px rgba(0, 0, 0, 0.75);
 }
 
 .orders-menu img {
@@ -1273,7 +1254,6 @@ a {
   margin: 10px 0 0 10px;
   width: 30px;
   height: 30px;
-
 }
 
 .imgMini {
@@ -1285,15 +1265,15 @@ a {
 .ordesMiniBlock {
   width: 70%;
   height: 130px;
-  border: 1PX solid #cbcbcb;
+  border: 1px solid #cbcbcb;
   padding: 0px 20px;
   margin: 0 0 0 10px;
   border-radius: 10px;
 }
-.ordesMiniBlock-all{
-margin: 20px 0 0 0;
+.ordesMiniBlock-all {
+  margin: 20px 0 0 0;
 }
-.OredesMENU{
+.OredesMENU {
   padding: 40px 0 0 0;
 }
 .ordesMiniBlock {
@@ -1309,13 +1289,10 @@ margin: 20px 0 0 0;
   justify-content: center;
   flex-direction: column;
   gap: 20px;
-
 }
-.OredesMENU{
+.OredesMENU {
   display: flex;
   flex-direction: column;
-  
-
 }
 .orders-text button {
   background-color: #dedede;
@@ -1325,22 +1302,34 @@ margin: 20px 0 0 0;
   font-size: 18px;
 }
 
-.chiqarish {
-  opacity: 1;
-  transition: all 0.5s ease-in-out;
+.results img {
+  width: 600px;
+  height: 672px;
+  position: absolute;
+  margin: -685px 0 0 200px;
+  z-index: 2;
 }
-.results img{
-    width: 600px;
-    height: 672px;
-    position: absolute;
-margin: -685px 0 0 200px;
-z-index: 2;
-}
-.btn-group button{
+.btn-group button {
   border: none;
 }
-.btn-group{
+.btn-group {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.blok {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transition: all 0.5s;
+  
+}
+.none {
+  display: none;
+  transition: all 0.5s;
+}
+.chiqarish {
+  transition: all 0.5s;
+  
 }

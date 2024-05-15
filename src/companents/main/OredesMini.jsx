@@ -3,6 +3,7 @@ import Frame from "../../assets/images/Frame.png";
 import img3 from "../../assets/GlassesImg/Frame (4).png";
 import img1 from "../../assets/glasses/img1.webp";
 import img2 from "../../assets/kiyim-image/nike.webp";
+import img4 from '../../assets/kiyim-image/4416382265_w640_h640_sportivnyj-kostyum-muzhskoj.webp'
 export default function OredesMini() {
   const [product, setProduct] = useState([
     {
@@ -12,6 +13,10 @@ export default function OredesMini() {
       price: "$ 799.00",
       about: "Men's Short-Sleeve Running Top",
       about1: "Ashen Slate/Cobalt Bliss",
+      option:'39',
+      option1:'40',
+      option2:'41',
+      option3:'42',
     },
     {
       id: 2,
@@ -28,7 +33,20 @@ export default function OredesMini() {
       price: "$ 599.00",
       about: "Men's Short-Sleeve Running Top",
       about1: "Ashen Slate/Cobalt Bliss",
+      option:'39',
+      option1:'40',
+      option2:'41',
+      option3:'42',
     },
+    {
+      id: 2,
+      image: img4,
+      name: "Nike clothes",
+      price: "$ 699.00",
+      about: "Men's Short-Sleeve Running Top",
+      about1: "Ashen Slate/Cobalt Bliss",
+    },
+    
   ]);
   return (
     <div className="oreders-mini-all" >
@@ -47,12 +65,14 @@ export default function OredesMini() {
             <div className="Oredes-praduck-block-text-minii">
               Size
               <select>
-                <option>L</option>
+                <option>{item.option}</option>
+                <option>{item.option1}</option>
+                <option>{item.option2}</option>
+                <option>{item.option3}</option>
                 <option>M</option>
                 <option>XL</option>
                 <option>XXL</option>
                 <option>XXXL</option>
-                <option>XXXXL</option>
               </select>
             </div>
             <div className="Oredes-praduck-block-text-mini-imgg">
