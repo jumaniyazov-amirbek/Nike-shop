@@ -10,12 +10,16 @@ export default function OredesMini() {
       image: img1,
       name: "Nike air force 1",
       price: "$ 799.00",
+      about: "Men's Short-Sleeve Running Top",
+      about1: "Ashen Slate/Cobalt Bliss",
     },
     {
       id: 2,
       image: img2,
       name: "Nike clothes",
       price: "$ 1.000",
+      about: "Men's Short-Sleeve Running Top",
+      about1: "Ashen Slate/Cobalt Bliss",
     },
     {
       id: 3,

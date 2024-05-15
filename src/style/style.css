@@ -949,6 +949,8 @@ a {
 
 .Oredes-praduck-block-img img {
   border-radius: 10px;
+  width: 150px;
+  height: 150px;
 }
 
 .Oredes-praduck-block-text-minii select {
