@@ -39,7 +39,7 @@ export default function ProductMini() {
       sale: "30% ",
     },
     {
-      id: 4,
+      id: 3,
       image: glasses3,
       name: "Nike air force 6",
       price: "$299,00",
@@ -90,7 +90,7 @@ export default function ProductMini() {
     <div className="Product-all-product-1-block-all">
       <div className="Product-all-product-1-block">
         {product.map(item => ( 
-          <Link to="/WhenPressed">
+          <Link key={item.id} to="/WhenPressed">
             <div className="Product-all-product-1-block-mini" key={item.id}>
               <div className="imgs">
                 <img src={item.image} alt="" />

@@ -9,10 +9,13 @@ import WhenPressed from './page/WhenPressed.jsx'
 import PraductRight from "./companents/main/PraductRight.jsx";
 import ProductMini from "./companents/main/ProductMini.jsx";
 import Product from "./companents/main/Product.jsx";
+import { useState } from "react";
+import Modal from "./companents/modal/Modal.jsx";
 function App() {
+  const [open, setOpen] = useState(false)
   return (
     <div className="app">
-      <Heading />
+      <Heading setOpen={setOpen}/>
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,6 +29,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
+      <Modal setOpen={setOpen} open={open}/>
     </div>
   );
 }

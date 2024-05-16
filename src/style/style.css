@@ -810,7 +810,7 @@ a {
   display: block;
 }
 
-.Member-block h1{
+.Member-block h1 {
   margin: 0 0 0 70px;
 }
 .Member-block-text p {
@@ -986,7 +986,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-gap: 400px;
+  gap: 400px;
 }
 
 .About-text {
@@ -1239,31 +1239,42 @@ gap: 400px;
 }
 
 .chiqarish {
-  width: 30%;
-  position: absolute;
+  width: 500px;
+  position: fixed;
   background: #fff;
-  height: 950px;
-  left: 1500px;
+  height: 100%;
+  right: -100%;
   top: 0;
   border: #c2c2c2 1px solid;
   border-radius: 20px 0 0 20px;
   padding: 0 30px 0 0;
+  transition: all 0.5s;
+  z-index: 100;
+}
+
+.chiqarish.active {
+  right: 0;
   -webkit-box-shadow: -200px 0px 0px 200px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -200px 0px 0px 200px rgba(0, 0, 0, 0.75);
   box-shadow: -200px 0px 0px 20000px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s;
 }
 
-.orders-menu img {
+.orders-menu {
   width: 30px;
   height: 30px;
+  border: none;
+  cursor: pointer;
 }
 
 .orders-menu {
   z-index: 10;
   position: absolute;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 15px;
   width: 30px;
   height: 30px;
+  border-radius: 5px;
+  transition: all 0.5s;
 }
 
 .imgMini {
@@ -1273,7 +1284,6 @@ gap: 400px;
 }
 
 .ordesMiniBlock {
-  width: 70%;
   height: 130px;
   border: 1px solid #cbcbcb;
   padding: 0px 20px;
@@ -1291,7 +1301,7 @@ gap: 400px;
   align-items: center;
   justify-content: center;
   justify-content: space-between;
- padding: 0 30px;
+  padding: 0 30px;
 }
 
 .orders-text {
@@ -1329,19 +1339,36 @@ gap: 400px;
   gap: 20px;
 }
 
-.blok {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  transition: all 0.5s;
-}
-.none {
-  display: none;
-  transition: all 0.5s;
-}
-.chiqarish {
-  transition: all 0.5s;
-}
-.Product-all-link{
+.Product-all-link {
   padding: 0 0 40px 0;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid #dee2e7;
+}
+
+.counter-button {
+  width: 26px;
+  height: 28px;
+  font-size: 4px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.counter-text {
+  font-size: 14px;
+  font-weight: 500;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blok{
+  display: block;
+}
+.none{
+  display: none;
 }

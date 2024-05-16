@@ -11,7 +11,7 @@ export default function Banner() {
             <h1>
            
             </h1>
-            <h2 class="my-headline">  XZ 
+            <h2 className="my-headline">  XZ 
              Nike</h2>
           </div>
         </div>
