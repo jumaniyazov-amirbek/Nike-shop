@@ -8,6 +8,7 @@ import payme2 from "../../assets/images/Western-union.png";
 import payme3 from "../../assets/images/Group 19.png";
 import karta from "../../assets/karta.png";
 import OredesMenu from "../main/OrdersMenu";
+
 export default function Heading() {
     const [burger, setBurger] = useState(false);
 

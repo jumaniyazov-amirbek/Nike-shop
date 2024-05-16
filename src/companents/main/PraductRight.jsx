@@ -7,18 +7,13 @@ export default function PraductRight() {
         <div className="continer">
             <div className="Product-all">
                 <div className="Product-all-titile">
-                    <h1>BEST SELLER</h1>
                 </div>
 
 
                 <div className="Product-all-product-all">
                     <PraductRightMini />
                     <div className="Product-all-product-all-btn">
-                        <Link to="/ProductMini">
-                            <button>
-                                <img src={left} alt="" />
-                            </button>
-                        </Link>
+
 
                     </div>
                 </div>

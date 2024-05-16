@@ -10,9 +10,10 @@ export default function Main() {
     <div className="Main">
       <Banner />
       <Glassess />
-      <About/>
+      
       <Member />
       <Product />
+    <About/>
     </div>
   );
 }

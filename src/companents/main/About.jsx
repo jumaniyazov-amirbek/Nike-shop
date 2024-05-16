@@ -2,6 +2,7 @@ import React from 'react'
 import bg from '../../assets/images/Image (1).png'
 export default function About() {
     return (
+        <div className="container">
         <div className='About-block'>
             <div className="About-block-bg"></div>
             <div className="About-text">
@@ -11,6 +12,7 @@ export default function About() {
                     <button>Order now</button>
             </div>
             <div className="About-img"><img src={bg} alt="" /></div>
+        </div>
         </div>
     )
 }

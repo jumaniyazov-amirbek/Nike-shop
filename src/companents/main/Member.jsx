@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Member() {
   return (
+    
     <div className="Member-block">
       <h1>Nike Membership</h1>
       <div className="container">
