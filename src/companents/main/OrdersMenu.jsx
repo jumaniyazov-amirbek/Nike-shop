@@ -5,6 +5,7 @@ import img4 from "../../assets/images/0158067_nike-dunk-low-fj5429-133.webp";
 import img5 from "../../assets/images/0153517_nike-air-dunk-jumbo-dv0821-002.webp";
 import img3 from "../../assets/kiyim-image/nike.webp";
 import img6 from "../../assets/GlassesImg/Frame (4).png";
+import { Link } from "react-router-dom";
 export default function OredesMenu() {
   const [count, setCount] = useState(1);
 
@@ -45,19 +46,29 @@ export default function OredesMenu() {
       {product.map((item) => (
         <div className="ordesMiniBlock-all" key={item.id}>
           <div className="ordesMiniBlock">
-            <img className="imgMini" src={item.image} alt="" />
-            <div className="orders-text">
+            <div className="img-text">
+              <img className="imgMini" src={item.image} alt="" />
               <p>{item.name}</p>
+            </div>
+            <div className="orders-text">
               <div class="counter">
-                <button class="counter-button" onClick={() => setCount((count) => count - 1)}> - </button>
+                <button
+                  class="counter-button"
+                  onClick={() => setCount((count) => count - 1)}
+                >
+                  <h1>-</h1>
+                </button>
                 <span class="counter-text">{count}</span>
                 <button
                   onClick={() => setCount((count) => count + 1)}
                   class="counter-button"
                 >
-                  +
+                  <h1>+</h1>
                 </button>
-              </div>
+              </div>{" "}
+              <Link to="/orders">
+                <button className="txt-btn">Oreder</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import glasses1 from "../../assets/images/0152890_nike-air-force-1-07-fq8201-100.webp";
-import glasses2 from "../../assets/images/0171318_nike-court-vision-lo-nn-dh2987-111.webp";
+import glasses2 from "../../assets/GlassesImg/glases2.webp";
 import glasses3 from "../../assets/images/0169903_nike-dunk-low-fz4618-001.webp";
-import glasses4 from "../../assets/images/0158067_nike-dunk-low-fj5429-133.webp";
-import glasses5 from "../../assets/images/0164107_nike-dunk-low-fv6909-800.webp";
+import glasses4 from "../../assets/GlassesImg/glases7.webp";
+import glasses5 from "../../assets/GlassesImg/glases6.webp";
 import glasses6 from "../../assets/images/0155276_nike-dunk-low-fv0384-001.webp";
-import glasses7 from "../../assets/images/0170288_nike-air-dunk-low-jumbo-fj4192-001.webp";
+import glasses7 from "../../assets/GlassesImg/glases8.webp";
 import glasses8 from "../../assets/images/0153517_nike-air-dunk-jumbo-dv0821-002.webp";
 import { Link } from "react-router-dom";
 import heart from "../../assets/svg/heart.svg";
