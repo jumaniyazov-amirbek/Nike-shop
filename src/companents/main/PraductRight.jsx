@@ -1,8 +1,17 @@
-import React from 'react'
-import left from "../../assets/svg/left.svg";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react'
 import PraductRightMini from '../main/PraductRightMini.jsx';
+import PraductRightMini2 from './PraductRightMini2.jsx';
 export default function PraductRight() {
+    const [burger, setBurger] = useState(false);
+
+    function menu() {
+      if (burger == true) {
+        setBurger(false);
+      }
+      if (burger == false) {
+        setBurger(true);
+      }
+    }
     return (
         <div className="continer">
             <div className="Product-all">
@@ -17,6 +26,15 @@ export default function PraductRight() {
 
                     </div>
                 </div>
+                
+            </div>
+            <div className="new-praduct">
+              <button className="new-praduct-button" onClick={menu}>+</button>
+              <div className={burger ? "blok" : "none"}>
+                <div className="fuck">
+                <PraductRightMini2 />
+                </div>
+              </div>
             </div>
         </div>
     )

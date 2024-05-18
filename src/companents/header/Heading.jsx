@@ -9,7 +9,7 @@ import payme3 from "../../assets/images/Group 19.png";
 import karta from "../../assets/karta.png";
 import OredesMenu from "../main/OrdersMenu";
 
-export default function Heading({setOpen}) {
+export default function Heading({ setOpen }) {
     const [burger, setBurger] = useState(false);
 
     function menu() {
@@ -43,11 +43,8 @@ export default function Heading({setOpen}) {
 
                 <div className="ordersmenu">
                     <button onClick={() => setOpen(true)}>Heart</button>
-                  
+
                 </div>
-
-
-
 
                 <Link to="/login">Pirofil</Link>
             </div>

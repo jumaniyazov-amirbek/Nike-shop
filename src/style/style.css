@@ -1372,3 +1372,8 @@ a {
 .none{
   display: none;
 }
+.heart-img{
+  z-index: 0;
+  display: flex;
+  position: relative;
+}
