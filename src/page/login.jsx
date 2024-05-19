@@ -1,6 +1,10 @@
+import bg from '../assets/login/pngtree-vector-abstract-white-background-with-geometric-design-of-hexago-picture-image_1149954.jpg'
 export default function Login() {
   return (
     <div className="login-all">
+      <div className="img-bg">
+        <img src={bg} alt="" />
+      </div>
       <div className="login">
       <h1>
         YOUR ACCOUNT <br />
