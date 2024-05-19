@@ -8,6 +8,7 @@ import glasses6 from "../../assets/GlassesImg/Image (2).png";
 import glasses7 from "../../assets/GlassesImg/Image (3).png";
 import glasses8 from "../../assets/GlassesImg/Image.png";
 import { Link } from "react-router-dom";
+import cart from '../../assets/svg/Cart.svg'
 import heart from "../../assets/svg/heart.svg";
 export default function PraductRightMini() {
   const [product, setProduct] = useState([
@@ -98,7 +99,7 @@ export default function PraductRightMini() {
                     {item.sellPrice} / <span>{item.sale} Off</span>
                   </p>
                   <div className="heart-block">
-                    <img src={heart} alt="" />
+                  <img src={cart} alt="" />
                   </div>
                 </div>
               </div>

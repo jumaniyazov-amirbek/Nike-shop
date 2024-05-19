@@ -8,6 +8,7 @@ import glasses6 from "../../assets/images/0164107_nike-dunk-low-fv6909-800.webp"
 import glasses7 from "../../assets/GlassesImg/glases3.webp";
 import glasses8 from "../../assets/images/0170288_nike-air-dunk-low-jumbo-fj4192-001.webp";
 import { Link } from "react-router-dom";
+import cart from '../../assets/svg/Cart.svg'
 import heart from "../../assets/svg/heart.svg";
 export default function PraductRightMini2() {
   const [product, setProduct] = useState([
@@ -98,7 +99,7 @@ export default function PraductRightMini2() {
                     {item.sellPrice} / <span>{item.sale} Off</span>
                   </p>
                   <div className="heart-block">
-                    <img src={heart} alt="" />
+                  <img src={cart} alt="" />
                   </div>
                 </div>
               </div>

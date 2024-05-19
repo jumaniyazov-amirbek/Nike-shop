@@ -42,7 +42,7 @@ export default function Heading({ setOpen }) {
 
 
                 <div className="ordersmenu">
-                    <button onClick={() => setOpen(true)}>Heart</button>
+                    <button onClick={() => setOpen(true)}>Basket</button>
 
                 </div>
 

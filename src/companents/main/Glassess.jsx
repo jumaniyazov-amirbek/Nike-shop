@@ -2,6 +2,7 @@ import glassess1 from "../../assets/images/0126756_nike-wmns-air-force-1-07-dd89
 import glassess2 from "../../assets/images/0173433_nike-air-force-1-07-fz4617-001.webp";
 import glassess3 from "../../assets/images/0125847_nike-court-vision-lo-nn-dh2987-101.webp";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 export default function Glassess() {
   const [product, setProduct] = useState([
     {
@@ -23,16 +24,18 @@ export default function Glassess() {
   return (
     <div className="Glassess-all">
       <div className="continer">
-        <div className="Glassess-block">
-          {product.map((item) => (
-            <div className="Glassess-block-btn1" key={item.id}>
-              <img src={item.image} alt="" />
-              <div className="Glassess-block-btn-text1">
-                <p>{item.name}</p>
+        <Link to="/WhenPressed">
+          <div className="Glassess-block">
+            {product.map((item) => (
+              <div className="Glassess-block-btn1" key={item.id}>
+                <img src={item.image} alt="" />
+                <div className="Glassess-block-btn-text1">
+                  <p>{item.name}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>{" "}
+        </Link>
       </div>
     </div>
   );

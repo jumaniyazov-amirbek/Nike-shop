@@ -10,7 +10,7 @@ import glasses8 from "../../assets/images/0153517_nike-air-dunk-jumbo-dv0821-002
 import { Link } from "react-router-dom";
 import heart from "../../assets/svg/heart.svg";
 import Heart from "./Heart.jsx";
-
+import cart from '../../assets/svg/Cart.svg'
 export default function ProductMini() {
   const [burger, setBurger] = useState(false);
 
@@ -107,9 +107,12 @@ export default function ProductMini() {
                   <p>
                     {item.sellPrice} / <span>{item.sale} Off</span>
                   </p>
+                  <Link to="/orders">
                   <div className="heart-block">
-                   <Heart/>
+                    <img src={cart} alt="" />
                   </div>
+              </Link>
+
                 </div>
               </div>
             </div>

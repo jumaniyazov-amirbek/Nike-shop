@@ -462,13 +462,13 @@ option {
 }
 
 .heart-block img {
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  margin: -340px 0 0 -20px;
-  color: rgb(255, 0, 21);
-  cursor: all-scroll;
-  z-index: 5;
+width: 25px;
+height: 25px;
+z-index: 10;
+position: absolute;
+border: #8d8d8d 1px solid;
+border-radius: 5px;
+margin: -340px 0 0 -15px;
 }
 
 .Heading-logo img {
@@ -1223,7 +1223,9 @@ a {
   text-align: left;
   color: #223263;
   font-family: sans-serif;
+
 }
+
 
 .ordersmenu button {
   background-color: inherit;
