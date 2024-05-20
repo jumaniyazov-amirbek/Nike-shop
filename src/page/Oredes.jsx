@@ -1,5 +1,9 @@
+import { useState } from "react";
 import OredesMini from "../companents/main/OredesMini";
+import { Link } from "react-router-dom";
+
 export default function Oredes() {
+    console.log('fuck');    
   return (
       <div className="Oredes-block">
           <div className="blok">
@@ -21,8 +25,9 @@ export default function Oredes() {
                       <p>Total</p> <p>$ 40.000</p>
                   </div>
                   <div className="Oredes-price-block-btn">
-                      <button>Member Checkout</button>
-                  </div>
+                  <Link to="/login"> <button>Member Checkout</button></Link>
+                     
+                        </div>
               </div>
           </div>
       </div>
