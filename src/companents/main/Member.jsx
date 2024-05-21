@@ -1,21 +1,22 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Member() {
   return (
     
     <div className="Member-block">
-      <h1>Nike Membership</h1>
+      <h1>Information</h1>
       <div className="container">
         <div className="Member-block-text">
-          <p>Where All Athletes Belong</p>
+          <p>Where about Nike</p>
           <h4>
-            When you’re with us, you’re part of something bigger: a <br />
-            global community dedicated to bringing out the best in one <br />
-            another, with access to the most effective tools for the job, <br />
-            including Member-exclusive products, Nike By You <br />
-            customisation, and special offers. And it's all free.
+          The company was founded in 1972 by Phil Knight, a student on the <br />
+           University of Oregon track team, and his coach, Bill Bowerman. The <br />
+            motto of the company was "Just Do It". The name of the company is <br />
+             derived from the name of the Greek god Nika.
           </h4>
-          <button>Join Us</button>
+         
+          <Link to="/NikeInfo"><button>In detail</button></Link>
+
         </div>
       </div>
     </div>

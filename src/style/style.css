@@ -134,14 +134,12 @@ option {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: #fff 1px solid;
+    border: #000 1px solid;
     transition: all 0.5s;
 }
 
-.Heading-sorche:hover {
-    border: #000 1px solid;
-    height: 42px;
-    background-color: #000;
+::placeholder{
+    color: #000;
 }
 
 .Heading-sorche input {
@@ -152,13 +150,11 @@ option {
     outline: none !important;
 }
 
-.Heading-sorche button:hover {
-    background-color: #000;
-}
+
 
 .Heading-sorche button {
     width: 127px;
-    background-color: #d8d8d8;
+    background-color: #000;
     height: 40px;
     color: #fff;
     border: none;
@@ -374,18 +370,16 @@ option {
     display: block;
     padding-top: 100%;
     background: currentColor;
-    clip-path: polygon(
-        50% 0%,
-        61% 35%,
-        98% 35%,
-        68% 57%,
-        79% 91%,
-        50% 70%,
-        21% 91%,
-        32% 57%,
-        2% 35%,
-        39% 35%
-    );
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
 
     width: 12px;
     height: 12px;
@@ -466,6 +460,7 @@ option {
     width: 25px;
     height: 25px;
 }
+
 .heart-block {
     width: 35px;
     height: 35px;
@@ -480,9 +475,11 @@ option {
     background-color: inherit;
     transition: all 0.5s;
 }
+
 .heart-block:hover {
     background-color: #b8b8b8;
 }
+
 .Heading-logo img {
     width: 94px;
     height: 87px;
@@ -622,12 +619,14 @@ hr {
 
     padding: 30px 0;
 }
+
 .new-praduct-button {
     z-index: 0;
     position: absolute;
     left: 79%;
     margin: 30px 0 0 0;
 }
+
 .Product-all-product-all-btn button {
     background-color: inherit;
     width: 60px;
@@ -748,6 +747,12 @@ hr {
     border: 1px 0px 0px 0px;
     opacity: 0px;
     border: 1px solid #e5e5e5;
+    outline: none !important;
+    transition: all 0.5s;
+}
+
+.login-input:hover {
+    border-bottom: #000 1px solid;
 }
 
 .login-bottom-left {
@@ -762,7 +767,7 @@ hr {
     font-size: 12px;
 }
 
-.login-bottom-right a {
+.login-bottom-right span {
     color: #bcbcbc;
     font-size: 12px;
     text-decoration: none;
@@ -815,6 +820,7 @@ a {
 .Member-block h1 {
     margin: 0 0 0 70px;
 }
+
 .Member-block-text p {
     font-size: 26px;
     color: #111111;
@@ -873,6 +879,7 @@ a {
     cursor: pointer;
     padding: 10px;
 }
+
 .oreders-mini-all {
     display: flex;
     align-items: center;
@@ -1294,12 +1301,15 @@ a {
     margin: 0 0 0 10px;
     border-radius: 10px;
 }
+
 .ordesMiniBlock-all {
     margin: 20px 0 0 0;
 }
+
 .OredesMENU {
     padding: 40px 0 0 0;
 }
+
 .ordesMiniBlock {
     display: flex;
     align-items: center;
@@ -1315,18 +1325,22 @@ a {
     flex-direction: column;
     gap: 20px;
 }
+
 .txt-btn {
     border: none;
     color: #000;
 }
+
 .OredesMENU {
     display: flex;
     flex-direction: column;
 }
+
 .counter button {
     background-color: #dedede;
     color: #fff;
 }
+
 .txt-btn {
     background-color: #fff;
     border: #000 1px solid;
@@ -1335,13 +1349,16 @@ a {
     transition: all 0.5s;
     cursor: pointer;
 }
+
 .txt-btn:hover {
     background-color: #000;
     color: #fff;
 }
+
 .counter-button h1 {
     font-size: 18px;
 }
+
 .results img {
     width: 600px;
     height: 672px;
@@ -1349,9 +1366,11 @@ a {
     margin: -685px 0 0 200px;
     z-index: 2;
 }
+
 .btn-group button {
     border: none;
 }
+
 .btn-group {
     display: flex;
     flex-direction: column;
@@ -1361,6 +1380,7 @@ a {
 .Product-all-link {
     padding: 0 0 40px 0;
 }
+
 .counter {
     display: flex;
     align-items: center;
@@ -1385,17 +1405,21 @@ a {
     align-items: center;
     justify-content: center;
 }
+
 .blok {
     display: block;
 }
+
 .none {
     display: none;
 }
+
 .heart-img {
     z-index: 0;
     display: flex;
     position: relative;
 }
+
 /* drfgth */
 
 .scrollbar {
@@ -1413,10 +1437,12 @@ a {
 .force-overflow {
     min-height: 0;
 }
+
 ::-webkit-scrollbar {
     opacity: 0;
     overflow: hidden;
 }
+
 #style-1::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
@@ -1445,6 +1471,7 @@ a {
     gap: 20px;
     padding: 0 0 20px 0;
 }
+
 .img-text {
     display: flex;
     align-items: center;
@@ -1453,6 +1480,7 @@ a {
     text-align: center;
     gap: 10px;
 }
+
 .img-bg img {
     position: absolute;
     width: 100%;
@@ -1460,10 +1488,12 @@ a {
     height: 100%;
     z-index: 0;
 }
+
 .login {
     position: relative;
     z-index: 1;
 }
+
 .login {
     display: flex;
     align-items: center;
@@ -1474,69 +1504,103 @@ a {
 }
 
 .carousel {
-  position: relative;
-      width: 620px;
+    position: relative;
+    width: 620px;
     height: 1072px;
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .carousel__track-container {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .carousel__track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel__slide {
-  min-width: 100%;
-  box-sizing: border-box;
+    min-width: 100%;
+    box-sizing: border-box;
 }
 
 .carousel__images {
-     width: 600px;
+    width: 600px;
     height: 672px;
-  display: block;
+    display: block;
 }
 
 .carousel__button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .carousel__button--left {
-  left: 10px;
+    left: 10px;
 }
 
 .carousel__button--right {
-  right: 10px;
+    right: 10px;
 }
 
 .is-hidden {
-  display: none;
+    display: none;
 }
 
 .carousel__nav {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .carousel__indicator {
-  background: #ccc;
-  border: none;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  cursor: pointer;
+    background: #ccc;
+    border: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
 .carousel__indicator.current-slide {
-  background: #333;
+    background: #333;
+}
+.btnlink a{
+    border: none;
+}
+.Information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+margin:  200px 0 0 0;
+    gap: 80px;
+}
+.Information-1block-text p{
+color: #5e5e5e;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.Information-1block-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Information-1block-text h1{
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Information-1block-img img{
+    width: 450px;
+    height: 300px;
+}
+.Information-1block{
+    display: flex;
+    align-items: center;justify-content: center;
+    gap: 100px;
 }

@@ -11,6 +11,8 @@ import ProductMini from "./companents/main/ProductMini.jsx";
 import Product from "./companents/main/Product.jsx";
 import { useState } from "react";
 import Modal from "./companents/modal/Modal.jsx";
+import LoginRegister from "./page/loginRegister.jsx";
+import NikeInfo from "./page/NikeInfo.jsx";
 function App() {
   const [open, setOpen] = useState(false)
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="PraductRight" element={<PraductRight />} />
           <Route path="ProductMini" element={<ProductMini />} />
           <Route path="Product" element={<Product />} />
+          <Route path="LoginRegister" element={<LoginRegister />} />
+          <Route path="NikeInfo" element={<NikeInfo />} />
         </Routes>
       </div>
       <Footer />

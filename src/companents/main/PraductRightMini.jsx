@@ -98,9 +98,11 @@ export default function PraductRightMini() {
                   <p>
                     {item.sellPrice} / <span>{item.sale} Off</span>
                   </p>
+                  <Link to="/orders">
                   <div className="heart-block">
-                  <img src={cart} alt="" />
+                    <img src={cart} alt="" />
                   </div>
+              </Link>
                 </div>
               </div>
             </div>
