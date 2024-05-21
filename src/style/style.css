@@ -445,7 +445,7 @@ option {
 }
 
 .icon {
-    font-size: 4rem;
+    font-size: 4reM;
     color: var(--accent);
     padding: 0.5rem;
     border-radius: 9px;
