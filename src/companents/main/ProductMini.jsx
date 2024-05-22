@@ -10,7 +10,7 @@ import glasses8 from "../../assets/images/0153517_nike-air-dunk-jumbo-dv0821-002
 import { Link } from "react-router-dom";
 import heart from "../../assets/svg/heart.svg";
 import Heart from "./Heart.jsx";
-import cart from '../../assets/svg/Cart.svg'
+import cart from "../../assets/svg/Cart.svg";
 export default function ProductMini() {
   const [burger, setBurger] = useState(false);
 
@@ -72,25 +72,26 @@ export default function ProductMini() {
       sale: "30% ",
     },
     {
-        id: 7,
-        image: glasses7,
-        name: "Nike air force 6",
-        price: "$299,00",
-        sellPrice: "$400,00 ",
-        sale: "30% ",
-      },
-      {
-        id: 8,
-        image: glasses8,
-        name: "Nike air force 6",
-        price: "$299,00",
-        sellPrice: "$400,00 ",
-        sale: "30% ",
-      },])
+      id: 7,
+      image: glasses7,
+      name: "Nike air force 6",
+      price: "$299,00",
+      sellPrice: "$400,00 ",
+      sale: "30% ",
+    },
+    {
+      id: 8,
+      image: glasses8,
+      name: "Nike air force 6",
+      price: "$299,00",
+      sellPrice: "$400,00 ",
+      sale: "30% ",
+    },
+  ]);
   return (
     <div className="Product-all-product-1-block-all">
       <div className="Product-all-product-1-block">
-        {product.map(item => ( 
+        {product.map((item) => (
           <Link key={item.id} to="/WhenPressed">
             <div className="Product-all-product-1-block-mini" key={item.id}>
               <div className="imgs">
@@ -108,11 +109,10 @@ export default function ProductMini() {
                     {item.sellPrice} / <span>{item.sale} Off</span>
                   </p>
                   <Link to="/orders">
-                  <div className="heart-block">
-                    <img src={cart} alt="" />
-                  </div>
-              </Link>
-
+                    <div className="heart-block">
+                      <img src={cart} alt="" />
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
