@@ -136,6 +136,7 @@ option {
     justify-content: center;
     border: #000 1px solid;
     transition: all 0.5s;
+    
 }
 
 ::placeholder{
