@@ -1,55 +1,10 @@
-@media screen and (max-width: 1440px) {
-  .Heading-link {
-    display: none;
-  }
-  .Heading-all {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-  }
-  .Glassess-block-btn3 {
-    display: none;
-  }
-  .menu {
-    display: block;
-  }
-}
-
 @media screen and (max-width: 1235px) {
-  .About-img img {
-    display: none;
-  }
   .login-all {
     padding: 0 500px 0 0;
   }
-  .Glassess-block-btn1 {
-    display: none;
-  }
 }
-@media screen and (max-width: 950px) {
-  .Heading-logo {
-    display: none;
-  }
-  .Heading-sorche {
-    width: 10000px;
-    margin: 0 0 0 -100px;
-  }
-  .Glassess-block-btn {
-    margin: 0 0 0 -470px;
-  }
-}
-@media screen and (max-width: 750px) {
-  .Glassess-block-btn {
-    margin: 0 0 0 -600px;
-  }
-}
+
 @media screen and (max-width: 700px) {
-  .Footer-block-mini2 {
-    display: none;
-  }
-  .Glassess-block-btn {
-    margin: 0 0 0 -800px;
-  }
   .login-all {
     padding: 0 800px 0 0;
   }
@@ -57,45 +12,5 @@
 @media screen and (max-width: 550px) {
   .login-all {
     padding: 0 1000px 0 0;
-  }
-
-  .Glassess-block-btn img {
-    width: 297px;
-    height: 320px;
-    gap: 0px;
-    opacity: 0px;
-    border-radius: 10px 10px 0 0;
-  }
-
-  .Glassess-block-btn {
-    width: 297px;
-    height: 330px;
-    gap: 0px;
-    opacity: 0px;
-    background-color: #fff;
-    margin: 0 0 200px 0;
-    border-radius: 10px 10px 0 0;
-    transition: all 0.5s;
-    border-bottom: 3px solid #fff;
-    margin: -300px 0 0 -900px;
-  }
-
-  .banner-bg-img {
-    width: 85%;
-    height: 400px;
-  }
-  .Banner-text h2 {
-    font-size: 38px;
-    position: absolute;
-    margin: -100px 0 0 80px;
-  }
-  .banner-bg-img{
-    margin: 0 0 0 -80px;
-    padding: 0  60px 0 0 ;
-  }
-}
-@media screen and (max-width: 490px) {
-  .Footer-block-mini1 {
-    display: none;
   }
 }
