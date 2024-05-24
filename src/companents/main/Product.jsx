@@ -32,7 +32,9 @@ export default function Product() {
             <Link to="/PraductLeft"></Link>
 
             <div className="new-praduct">
-              <button className="new-praduct-button" onClick={menu}>+</button>
+              <button className="new-praduct-button" onClick={menu}>
+                +
+              </button>
               <div className={burger ? "blok" : "none"}>
                 <div className="fuck">
                   <PraductRight />
