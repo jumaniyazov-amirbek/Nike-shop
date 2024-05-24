@@ -31,8 +31,16 @@
     display: none;
   }
   .Heading-sorche {
-    width: 10000px;
+    width: 100%;
     margin: 0 0 0 -100px;
+    height: 30PX;
+  }
+  .Heading-sorche input{
+    height: 30px;
+ 
+  }
+  .Heading-sorche button{
+    height: 30px;
   }
   .Glassess-block-btn {
     margin: 0 0 0 -470px;
@@ -52,6 +60,10 @@
   }
   .login-all {
     padding: 0 800px 0 0;
+  }
+  .Heading-sorche input{
+   width: 200px;
+ 
   }
 }
 @media screen and (max-width: 550px) {

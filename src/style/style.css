@@ -127,14 +127,15 @@ option {
 
 .Heading-sorche {
     width: 635px;
-    top: 86px;
+    top: 84px;
     left: 356px;
     gap: 0px;
     opacity: 0px;
     display: flex;
     align-items: center;
+    height: 40PX;
     justify-content: center;
-    border: #000 1px solid;
+    border: #000 2px solid;
     transition: all 0.5s;
 }
 
