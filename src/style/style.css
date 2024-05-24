@@ -132,6 +132,7 @@ option {
     gap: 0px;
     opacity: 0px;
     display: flex;
+    height: 40px;
     align-items: center;
     justify-content: center;
     border: #000 1px solid;
