@@ -27,7 +27,10 @@ const ProductMini = () => {
                 className="Product-all-product-1-block-mini"
                 key={product.id}
               >
-                <img src={product.img} alt="" />
+                <div className="Product-all-product-1-block-mini-bgg-img">
+                     <img src={product.img} alt="" />
+                </div>
+             
                 <div className="Product-all-product-1-block-mini-text-all">
                   <div className="Product-all-product-1-block-mini-text">
                     <p>{product.name}</p>

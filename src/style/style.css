@@ -253,7 +253,7 @@ option {
 }
 
 .Glassess-all {
-  margin: 400px 0 0 0;
+  margin: 400px 0 100px 0;
 }
 
 .Glassess-block {
@@ -300,16 +300,15 @@ option {
 }
 
 .Product-all-product-1-block-mini {
-  width: 301px;
+  width: 300px;
   height: 389px;
   transition: all 0.5s;
   display: flex;
   flex-direction: column;
   user-select: none;
   background-color: #f5f5f5;
-  border-radius: 5px;
+  border-radius: 10px;
 }
-
 .imgs img {
   pointer-events: none;
 }
@@ -400,8 +399,14 @@ option {
   gap: 10px;
 }
 
-.Product-all-product-1-block-mini img {
-  width: 299px;
+.Product-all-product-1-block-mini-bgg-img img {
+  width: 290px;
+  height: 290px;
+  margin: 0 0 0 10px;
+  transition: all 0.5s;
+}
+.Product-all-product-1-block-mini-bgg-img {
+  width: 290px;
   height: 290px;
 }
 
@@ -1201,14 +1206,6 @@ a {
 }
 
 /* rtgfd */
-.Glassess-block-btn1 img {
-  position: absolute;
-  width: 397px;
-  height: 420px;
-  gap: 0px;
-  opacity: 0px;
-  border-radius: 10px 10px 0 0;
-}
 
 .Glassess-block-btn1 {
   width: 397px;
@@ -1220,11 +1217,6 @@ a {
   border-radius: 10px 10px 0 0;
   transition: all 0.5s;
   border-bottom: 3px solid #fff;
-}
-
-.Glassess-block-btn1:hover {
-  border-bottom: 2px solid #000;
-  transform: translateY(-30px);
 }
 
 .Glassess-block-btn-text1 {
@@ -1613,4 +1605,27 @@ a {
   align-items: center;
   justify-content: center;
   gap: 100px;
+}
+.Product-all-product-1-block-mini1:hover {
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  transform: translateY(-30px);
+}
+.Product-all-product-1-block-mini1 {
+  width: 397px;
+  height: 400px;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+.Glassess-block-btn1 img {
+  position: absolute;
+  width: 397px;
+  height: 390px;
+  gap: 0px;
+  opacity: 0px;
+  border-radius: 10px 10px 0 0;
 }
