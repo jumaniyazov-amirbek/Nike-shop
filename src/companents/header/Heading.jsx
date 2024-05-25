@@ -9,74 +9,66 @@ import payme3 from "../../assets/images/Group 19.png";
 import karta from "../../assets/karta.png";
 
 export default function Heading({ setOpen }) {
-    const [burger, setBurger] = useState(false);
+  const [burger, setBurger] = useState(false);
 
-    function menu() {
-        if (burger == true) {
-            setBurger(false);
-        }
-        if (burger == false) {
-            setBurger(true);
-        }
+  function menu() {
+    if (burger == true) {
+      setBurger(false);
     }
-    return (
-        <div className="Heading-all">
-            <Link to="/">
-                <div className="Heading-logo">
-                    <img src={HeadingLogo} alt="" />
-                </div>
-            </Link>
-            <div className="Heading-sorche">
-                <input placeholder="Search query..." type="text" />
-                <button>Search</button>
-            </div>
-            <div className="Heading-link">
-                <Link to="/"> Home</Link>
-                <Link to="/orders"> Orders</Link>
-
-                <a href="#product">Product</a>
-
-
-
-
-
-                <div className="ordersmenu">
-                    <button onClick={() => setOpen(true)}>Basket</button>
-
-                </div>
-
-                <Link to="/login">Pirofil</Link>
-            </div>
-
-            <div className="menu">
-                <button onClick={menu}>
-                    <img src={menuu} alt="" />
-                </button>
-                <div className={burger ? "blok" : "none"}>
-                    <div className="release">
-                        <button onClick={menu}>
-                            <img src={x} alt="" />
-                        </button>
-                        <div className="link">
-                            <Link to="/"> Home</Link>
-                            <Link to="/orders"> Orders</Link>
-                            <Link to="/login">login</Link>
-                        </div>
-                        <div className="Heading-logoo">
-                            <img src={karta} alt="" />
-                        </div>
-                        <hr />
-                        <div className="Footer-text">
-                            <p>© 2018 Ecommerce www.bisenbaev.com</p>
-                            <div className="Footer-img">
-                                <img src={payme1} alt="" />
-                                <img src={payme2} alt="" />
-                                <img src={payme3} alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    if (burger == false) {
+      setBurger(true);
+    }
+  }
+  return (
+    <div className="Heading-all">
+      <Link to="/">
+        <div className="Heading-logo">
+          <img src={HeadingLogo} alt="" />
         </div>
-    );
+      </Link>
+      <div className="Heading-sorche">
+        <input placeholder="Search query..." type="text" />
+        <button>Search</button>
+      </div>
+      <div className="Heading-link">
+        <Link to="/"> Home</Link> 
+        <a href="#product">Product</a>
+        <Link to="/orders"> Orders</Link>
+        <div className="ordersmenu">
+          <button onClick={() => setOpen(true)}>Basket</button>
+        </div>
+        <Link to="/login">Pirofil</Link>
+      </div>
+
+      <div className="menu">
+        <button onClick={menu}>
+          <img src={menuu} alt="" />
+        </button>
+        <div className={burger ? "blok" : "none"}>
+          <div className="release">
+            <button onClick={menu}>
+              <img src={x} alt="" />
+            </button>
+            <div className="link">
+              <Link to="/"> Home</Link>
+              <Link to="/orders"> Orders</Link>
+              <Link to="/login">login</Link>
+            </div>
+            <div className="Heading-logoo">
+              <img src={karta} alt="" />
+            </div>
+            <hr />
+            <div className="Footer-text">
+              <p>© 2018 Ecommerce www.bisenbaev.com</p>
+              <div className="Footer-img">
+                <img src={payme1} alt="" />
+                <img src={payme2} alt="" />
+                <img src={payme3} alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }

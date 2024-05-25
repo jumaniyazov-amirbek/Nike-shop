@@ -135,9 +135,10 @@ option {
   height: 40px;
   align-items: center;
   justify-content: center;
-  border: #000 1px solid;
+  border-left: #000 1px solid;
   transition: all 0.5s;
   cursor: pointer;
+  transition: all 1s ease-in-out;
 }
 
 ::placeholder {
@@ -160,6 +161,7 @@ option {
   border: none;
   transition: all 0.5s;
   cursor: pointer;
+  border: #000 2px solid;
 }
 
 .Heading-block {
@@ -402,7 +404,7 @@ option {
 .Product-all-product-1-block-mini-bgg-img img {
   width: 290px;
   height: 290px;
-  margin: 0 0 0 10px;
+  margin: 8px 0 0 10px;
   transition: all 0.5s;
 }
 .Product-all-product-1-block-mini-bgg-img {
@@ -659,6 +661,7 @@ hr {
 
 .Product-all-product-1-block {
   display: flex;
+  gap: 30px;
 }
 
 /* yfre */
@@ -1026,7 +1029,7 @@ a {
 .About-text button {
   width: 130px;
   height: 40px;
-  border: 1px solid #8d8d8d;
+  border: 1px solid #000000;
   background-color: inherit;
   border-radius: 20px;
   transition: 0.5s;
@@ -1035,7 +1038,7 @@ a {
 .About-text button:hover {
   border: 1px solid #fff;
   color: #fff;
-  background-color: #8d8d8d;
+  background-color: #000000;
 }
 
 .About-block-bg {

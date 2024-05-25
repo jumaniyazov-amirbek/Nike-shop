@@ -7,7 +7,7 @@ import cart from "../../assets/svg/Cart.svg";
 const ProductMini = () => {
   const [data, setData] = useState([]);
 
-  const url = "https://3d6af63b73d1ffb5.mokky.dev/baner-bg";
+  const url = "https://128de5c23d00ef14.mokky.dev/bannerApi";
 
   useEffect(() => {
     axios.get(url).then((res) => setData(res.data));

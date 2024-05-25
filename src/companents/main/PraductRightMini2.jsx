@@ -7,7 +7,7 @@ import cart from "../../assets/svg/Cart.svg";
 const PraductRightMini2 = () => {
   const [data, setData] = useState([]);
 
-  const url = "https://128de5c23d00ef14.mokky.dev/products";
+  const url = "https://128de5c23d00ef14.mokky.dev/praducts3";
 
   useEffect(() => {
     axios.get(url).then((res) => setData(res.data));
