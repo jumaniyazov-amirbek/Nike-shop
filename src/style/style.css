@@ -765,7 +765,7 @@ hr {
   border-radius: 3px 0px 0px 0px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #f0f0f0;
   outline: none !important;
   transition: all 0.5s;
 }
