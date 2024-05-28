@@ -13,7 +13,7 @@ export default function Main() {
       <Glassess />
       <Member />
       <Product />
-    <About/>
+      <About />
     </div>
   );
 }

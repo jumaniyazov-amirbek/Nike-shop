@@ -3,22 +3,18 @@ import Frame from "../../assets/images/Frame.png";
 import img3 from "../../assets/GlassesImg/Frame (4).png";
 import img1 from "../../assets/glasses/img1.webp";
 import img2 from "../../assets/kiyim-image/nike.webp";
-
 import img4 from "../../assets/kiyim-image/4416382265_w640_h640_sportivnyj-kostyum-muzhskoj.webp";
 import img5 from "../../assets/GlassesImg/glases5.webp";
 export default function OredesMini() {
-  const [product, setProduct] = useState([
+  const [items, setItems] = useState([
     {
       id: 1,
+      name1: 'Item 1',
       image: img1,
       name: "Nike air force 1",
       price: "$ 799.00",
       about: "Men's Short-Sleeve Running Top",
       about1: "Ashen Slate/Cobalt Bliss",
-      option: "39",
-      option1: "40",
-      option2: "41",
-      option3: "42",
     },
     {
       id: 2,
@@ -60,50 +56,65 @@ export default function OredesMini() {
       option2: "41",
       option3: "42",
     },
+
   ]);
+
+
+  const handleDeleteClick = (id) => {
+    setItems(prevItems => prevItems.filter(item => item.id !== id));
+  };
   return (
     <div className="oreders-mini-all">
-      <div class="scrollbar" id="style-1">
+        {!items.length && <p>product is empty!</p>}
+
+{items.length > 0 && (
+      <div class="scrollbar" id="style-1"> 
         <div class="force-overflow"></div>
-        {product.map((item) => (
+     
+        {items.map((items) => (
           <div className="Oredes-praduck-block-scrol">
-            <div className="Oredes-praduck-block" key={item.id}>
-              <div className="Oredes-praduck-block-img">
-                <img src={item.image} alt="" />
-              </div>
-              <div className="Oredes-praduck-block-text">
-                <div className="Oredes-praduck-block-text-mini">
-                  <p>{item.name}</p>
-                  <p>{item.price}</p>
+            <div>
+
+
+              <div className="Oredes-praduck-block" key={items.id} >
+
+                <div className="Oredes-praduck-block-img">
+                  <img src={items.image} alt="" />
                 </div>
-                <p>{item.about}</p>
-                <p>{item.about1}</p>
-                <div className="Oredes-praduck-block-text-minii">
-                  Size
-                  <select>
-                    <option>{item.option}</option>
-                    <option>{item.option1}</option>
-                    <option>{item.option2}</option>
-                    <option>{item.option3}</option>
-                    <option>M</option>
-                    <option>XL</option>
-                    <option>XXL</option>
-                    <option>XXXL</option>
-                  </select>
+                <div className="Oredes-praduck-block-text">
+                  <div className="Oredes-praduck-block-text-mini">
+                    <p>{items.name}</p>
+                    <p>{items.price}</p>
+                  </div>
+                  <p>{items.about}</p>
+                  <p>{items.about1}</p>
+                  <div className="Oredes-praduck-block-text-minii">
+                    Size
+                    <select>
+                      <option>M</option>
+                      <option>XL</option>
+                      <option>XXL</option>
+                      <option>XXXL</option>
+                    </select>
+                  </div>
+
+                  <button className="Oredes-praduck-block-text-mini-imgg" onClick={() => handleDeleteClick(items.id)}>
+
+                    <img
+                      className="Oredes-praduck-block-text-mini-img"
+                      src={Frame}
+                      alt=""
+                    /></button>
+
+
                 </div>
-                <div className="Oredes-praduck-block-text-mini-imgg">
-                  <img
-                    className="Oredes-praduck-block-text-mini-img"
-                    src={Frame}
-                    alt=""
-                  />
-                </div>
-                
               </div>
             </div>
+
           </div>
-        ))}
+
+        ))} 
       </div>
-    </div>
+    )}</div >
   );
 }

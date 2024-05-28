@@ -1,24 +1,40 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Member() {
-  return (
-    
-    <div className="Member-block">
-      <h1>Information</h1>
-      <div className="container">
-        <div className="Member-block-text">
-          <p>Where about Nike</p>
-          <h4>
-          The company was founded in 1972 by Phil Knight, a student on the <br />
-           University of Oregon track team, and his coach, Bill Bowerman. The <br />
-            motto of the company was "Just Do It". The name of the company is <br />
-             derived from the name of the Greek god Nika.
-          </h4>
-         
-          <Link to="/NikeInfo"><button>In detail</button></Link>
+  const [data, setData] = useState([]);
 
-        </div>
-      </div>
+  const url = "https://128de5c23d00ef14.mokky.dev/InformationNike";
+
+  useEffect(() => {
+    axios.get(url).then((res) => setData(res.data));
+  }, []);
+
+  const onAdd = (product) => {
+    addBasket(product);
+  };
+  return (
+    <div>
+      {
+        data.map((product) => (
+          <div className="Member-block">
+
+            <h1>{product.h1}</h1>
+            <div className="container">
+              <div className="Member-block-text">
+                <p>{product.p}</p>
+                <h4>
+                  {product.h4}
+                </h4>
+
+                <Link to="/NikeInfo"><button>In detail</button></Link>
+
+              </div>
+            </div>
+          </div>
+        ))}
     </div>
+
   );
 }
