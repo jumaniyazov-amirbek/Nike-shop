@@ -5,6 +5,7 @@ import img1 from "../../assets/glasses/img1.webp";
 import img2 from "../../assets/kiyim-image/nike.webp";
 import img4 from "../../assets/kiyim-image/4416382265_w640_h640_sportivnyj-kostyum-muzhskoj.webp";
 import img5 from "../../assets/GlassesImg/glases5.webp";
+import karasofka from '../../assets/glasses/karasofka.webp'
 export default function OredesMini() {
   const [items, setItems] = useState([
     {
@@ -64,7 +65,9 @@ export default function OredesMini() {
   };
   return (
     <div className="oreders-mini-all">
-        {!items.length && <p>product is empty!</p>}
+        {!items.length && 
+        <div className="razultat"><h1>No product</h1><img src={karasofka} alt="" /></div>
+        }
 
 {items.length > 0 && (
       <div class="scrollbar" id="style-1"> 

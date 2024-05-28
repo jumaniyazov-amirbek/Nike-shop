@@ -1634,3 +1634,25 @@ a {
   opacity: 0px;
   border-radius: 10px 10px 0 0;
 }
+.razultat{
+  position: absolute;
+
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  left: 0%;padding: 20% 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ gap: 20px;
+}
+.razultat h1{
+  font-size: 50px;
+  color: #000;
+  text-align: center;
+ 
+}
+.razultat img{
+  width: 100px;
+  height: 100Px;
+}
