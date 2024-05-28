@@ -9,7 +9,6 @@ export default function OredesMini() {
   const [items, setItems] = useState([
     {
       id: 1,
-      name1: 'Item 1',
       image: img1,
       name: "Nike air force 1",
       price: "$ 799.00",
